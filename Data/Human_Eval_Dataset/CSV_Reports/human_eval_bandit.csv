@@ -1,0 +1,4 @@
+filename,test_name,test_id,issue_severity,issue_confidence,issue_cwe,issue_text,line_number,col_offset,end_col_offset,line_range,more_info
+sample_data/Human_Eval_Dataset/Original/human_eval_105.py,try_except_pass,B110,LOW,HIGH,https://cwe.mitre.org/data/definitions/703.html,"Try, Except, Pass detected.",18,8,16,"[18, 19]",https://bandit.readthedocs.io/en/1.7.9/plugins/b110_try_except_pass.html
+sample_data/Human_Eval_Dataset/Original/human_eval_160.py,blacklist,B307,MEDIUM,HIGH,https://cwe.mitre.org/data/definitions/78.html,Use of possibly insecure function - consider using safer ast.literal_eval.,5,11,27,[5],https://bandit.readthedocs.io/en/1.7.9/blacklists/blacklist_calls.html#b307-eval
+sample_data/Human_Eval_Dataset/Original/human_eval_162.py,hashlib,B324,HIGH,HIGH,https://cwe.mitre.org/data/definitions/327.html,Use of weak MD5 hash for security. Consider usedforsecurity=False,3,11,44,[3],https://bandit.readthedocs.io/en/1.7.9/plugins/b324_hashlib.html
