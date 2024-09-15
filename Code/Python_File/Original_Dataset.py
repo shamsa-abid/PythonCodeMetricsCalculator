@@ -43,7 +43,7 @@ def createFolder(completePath):
 basePath = 'sample_data/Human_Eval_Dataset'
 folderName = 'Dataset'
 reportFolderName = 'CSV_Reports'
-reportFileCommonName = 'human_eval_'
+reportFileCommonName = ''
 
 """# **Step 3: Loading HumanEval Dataset**"""
 
@@ -55,7 +55,8 @@ df = pd.DataFrame(dataset['test'])
 # Select the desired columns
 columns = ['task_id', 'prompt', 'canonical_solution', 'test', 'entry_point']
 df = df[columns]
-
+df['task_id'] = df['task_id'].str.replace('HumanEval/', reportFileCommonName)
+df = df.set_index('task_id')
 # Convert DataFrame to PrettyTable
 table = PrettyTable()
 
@@ -66,8 +67,9 @@ table.field_names = df.columns.tolist()
 for index, row in df.iterrows():
     table.add_row(row.tolist())
 
+
 # Print the PrettyTable
-print(df.loc[0, 'task_id'])
+print(table)
 
 """# **Step 4: Writing Code in File**"""
 
@@ -115,12 +117,12 @@ def writeCodeInFile(basePath, folderName):
         filePath = os.path.join(completePath, fileName)
 
         # Extract and clean function definition
-        functionDefinition = removeComments(df.loc[i, 'prompt']).strip()
+        functionDefinition = removeComments(df.loc[str(i), 'prompt']).strip()
         functionDefinition = removeLeadingSpaces(functionDefinition, 2)
         functionDefinition = removeLinesContaining('FIX = ', functionDefinition)  # Remove lines containing 'FIX='
 
         # Extract and clean solution
-        solution = df.loc[i, 'canonical_solution']
+        solution = df.loc[str(i), 'canonical_solution']
         solution = removeLeadingSpaces(solution, 2)
 
         # Write the function definition and solution to the file
@@ -133,6 +135,66 @@ def writeCodeInFile(basePath, folderName):
     formatDirectory(completePath)
 
 # Example usage
+
+"""# **Step 5: Test Case Check**"""
+
+def calculatePassPercentage(candidateCode, checkCode, functionName):
+    # Execute the candidate code
+    exec(candidateCode)
+    # print(candidateCode)
+
+    # Extract all assert statements from the checkCode
+    testCases = re.findall(r'assert\s+.+', checkCode)
+
+    # Total number of test cases
+    totalTests = len(testCases)
+    passedTests = 0
+
+    # Execute each test case dynamically inside a try-except block
+    for testCase in testCases:
+        testCase = testCase.replace('candidate', functionName)
+        # print(testCase)
+        try:
+            exec(testCase)
+            passedTests += 1
+        except AssertionError:
+            pass
+
+    # Calculate the percentage of passed test cases
+    percentagePassed = (passedTests / totalTests) * 100
+    return percentagePassed
+
+
+def verifyTestCase():
+  completePath = os.path.join(basePath, folderName)
+  reportPath = os.path.join(basePath, reportFolderName)
+  testCaseReport = os.path.join(reportPath, reportFileCommonName + 'test_case_pass.csv')
+  code= {}
+  #Read Code From File
+  for fileName in os.listdir(completePath):
+
+    # Check if the file is a Python file
+    if fileName.endswith('.py'):
+        with open(os.path.join(completePath,fileName), 'r') as file:
+            key = fileName.replace(".py", "")
+            fileContent = file.read()
+            code[key] = fileContent
+
+  testCaseVerificationArray = []
+  for key in code:
+    if key != '32' and key != '44'and key != '87' and key != '55' and key != '1' and key != '53'and key != '63'and key != '50' and key != '113' and key != '38' and key != '151':
+      print(key)
+      # Extract and clean function definition
+      functionDefinition = removeComments(df.loc[key, 'prompt']).strip()
+      functionDefinition = removeLeadingSpaces(functionDefinition, 2)
+      functionDefinition = removeLinesContaining('FIX = ', functionDefinition)  # Remove lines containing 'FIX='
+      functionName = re.search(r"def\s+(\w+)\s*\(", functionDefinition).group(1)
+      percentagePassed = calculatePassPercentage(code[key],df.loc[key]['test'],functionName)
+      print(percentagePassed)
+      testCaseVerificationArray.append(percentagePassed)
+  print(testCaseVerificationArray)
+
+# verifyTestCase()
 
 """# **Step 5: Running Bandit**"""
 
