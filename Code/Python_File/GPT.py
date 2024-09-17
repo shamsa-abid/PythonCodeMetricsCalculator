@@ -372,9 +372,9 @@ def runRadon(folderName):
       csvwriter = csv.writer(csvfile)
       # Write header
       csvwriter.writerow([
-          'File Name', 'LOC', 'LLOC', 'SLOC', 'Comments', 'Multi',
+          'File Name', 'LOC', 'LLOC', 'SLOC', 'Comments',
           'Cyclomatic Complexity', 'Maintainability Index',
-          'h1', 'h2','h' 'N1', 'N2', 'N',
+          'h1', 'h2','h', 'N1', 'N2', 'N',
           'Vocabulary', 'Volume', 'Difficulty',
           'Effort', 'Bugs', 'Time'
       ])
@@ -389,6 +389,7 @@ def runRadon(folderName):
 
               # Calculate total and average complexity
               total_complexity = sum(block.complexity for block in complexity_metrics)
+
 
               # Write metrics to CSV
               csvwriter.writerow([
