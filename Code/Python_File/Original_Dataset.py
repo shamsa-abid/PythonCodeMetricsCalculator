@@ -308,13 +308,13 @@ def runComplexipy(folderName):
 def get_radon_metrics(file_path):
     with open(file_path, 'r') as file:
         code = file.read()
-
+        print(file_path)
         # Calculate metrics
         raw_metrics = analyze(code)
         complexity_metrics = cc_visit(code)
         maintainability_index = mi_visit(code, True)
         halstead_metrics = h_visit(code)
-
+        print(complexity_metrics)
         return raw_metrics, complexity_metrics, maintainability_index, halstead_metrics
 
 
@@ -327,9 +327,9 @@ def runRadon(folderName):
       csvwriter = csv.writer(csvfile)
       # Write header
       csvwriter.writerow([
-          'File Name', 'LOC', 'LLOC', 'SLOC', 'Comments', 'Multi',
+          'File Name', 'LOC', 'LLOC', 'SLOC', 'Comments',
           'Cyclomatic Complexity', 'Maintainability Index',
-          'h1', 'h2','h' 'N1', 'N2', 'N',
+          'h1', 'h2','h', 'N1', 'N2', 'N',
           'Vocabulary', 'Volume', 'Difficulty',
           'Effort', 'Bugs', 'Time'
       ])
@@ -341,9 +341,10 @@ def runRadon(folderName):
 
               # Get Radon metrics
               raw_metrics, complexity_metrics, maintainability_index, halstead_metrics = get_radon_metrics(file_path)
-
+              print(block.complexity for block in complexity_metrics)
               # Calculate total and average complexity
               total_complexity = sum(block.complexity for block in complexity_metrics)
+              print(total_complexity)
 
               # Write metrics to CSV
               csvwriter.writerow([
