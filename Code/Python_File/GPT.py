@@ -45,7 +45,7 @@ def createFolder(completePath):
 
   print(f"Folder created at: {completePath}")
 
-basePath = 'sample_data/GPT_4_Improved'
+basePath = 'sample_data/GPT_4_Improved_Prompt'
 folderName = 'Dataset'
 reportFolderName = 'CSV_Reports'
 reportFileCommonName = ''
@@ -78,40 +78,47 @@ print(table)
 
 """# **Step 4: Prompt and Code Generation from ChatGPT**"""
 
-simpleChatGPTPrompt = """
-Here is an input code < {inputCode} >. Can you complete the code? Can you ensure that your completed code passes the given test cases < {testCase} >?
-
-• Make sure to provide only the completed code.
-• There should be no nested functions in your code. All helper functions should be top-level, not defined within other functions.
-• Do not use undefined functions in your code.
-• Make sure there are no syntax or semantics errors in the code.
-• Do not change the function name and variables inside function parameters.
-• Identify any external module dependencies and import them before the function definition.
-• Provide only the function implementation (no test cases, comments, or any extra code).
+simplePrompt = """
+For given function definition and docstring < {input} > provide the code solution.
 
 Output Format: <code>
 """
 
-improvedChatGPTPrompt = """
-Here is a query < {inputCode} > and a human-written solution < {solution} >. Your task is to provide a better and innovative code solution than the human-written solution by making your code more optimized, readable, and safe, while reducing complexity. The code must pass the provided test cases < {testCase} >. Follow the guidelines below:
+instructionTonePrompt = """
+For given function definition and docstring < {input} >, your task is to provide the code solution and ensure that your completed code passes the given test case < {testCase} >.
 
-•	Only return the generated code solution.
-•	The function name and parameter variables must remain unchanged.
-•	There should be no syntax or semantic errors.
-•	Avoid nested functions.
-•	Do not use undefined or external functions unless required.
-•	Identify any external module dependencies and import them before the function definition.
-•	Do not add comments or explanations.
-•	Ensure error handling is incorporated if applicable to avoid runtime failures.
-•	Focus on improving performance and code clarity.
-•	Maintain or improve safety and readability in the solution.
+• Provide only the function implementation (no test cases, comments, or any extra code).
+• Do not change the function name in the function definition or argument types and names
+• Do not change the argument types and names in the function definition
+• Identify any external module dependencies and import them before the function definition.
+• There should be no nested functions in your code. All helper functions should be top-level, not defined within other functions.
+• Do not use undefined functions in your code.
+• Make sure there are no syntax or semantic errors in your code
+
+Output Format: <code>
+"""
+
+improvedPrompt = """
+Here is a query < {input} > and a human-written solution < {solution} >. Your task is to provide a better and innovative code solution than the human-written solution by making your code more optimized, readable, and safe, while reducing complexity. The code must pass the provided test cases < {testCase} >. Follow the guidelines below:
+
+• Provide only the function implementation (no test cases, comments, or any extra code).
+• Do not change the function name in the function definition or argument types and names
+• Do not change the argument types and names in the function definition
+• Identify any external module dependencies and import them before the function definition.
+• There should be no nested functions in your code. All helper functions should be top-level, not defined within other functions.
+• Do not use undefined functions in your code.
+• Make sure there are no syntax or semantic errors in your code
+• Ensure error handling is incorporated if applicable to avoid runtime failures.
+• Focus on improving performance and code clarity.
+• Maintain or improve safety and readability in the solution.
 
 Output format: <code>
+
 """
 
 openai.api_key = ""
-chatGPTCode = pd.DataFrame(columns=["task_id", "canonical_solution"])
-improvedChatGPTCode = pd.DataFrame(columns=["task_id", "canonical_solution"])
+GPTCode = pd.DataFrame(columns=["task_id", "canonical_solution"])
+improvedGPTCode = pd.DataFrame(columns=["task_id", "canonical_solution"])
 
 
 def getOutputFromGPT(query):
@@ -133,45 +140,51 @@ def getOutputFromGPT(query):
   return strip(output)
 
 
-def writeChatGPTCodeInDataFrame(choice):
+def writeGPTCodeInDataFrame(choice):
   #choice 1: Simple Prompts; choice 2: Improved Prompts
   for i in range (len(df)):
-    if(choice == 1):
-      chatGPTCode.at[i,"task_id"] = i
-      query = simpleChatGPTPrompt.format(
-          inputCode = df.loc[str(i),"prompt"],
-          testCase = df.loc[str(i), "test"]
-      )
+    query = None
+    if(choice == 1 or choice == 2):
+      GPTCode.at[i,"task_id"] = i
+      if(choice == 1):
+        query = simplePrompt.format(
+            input = df.loc[str(i),"prompt"],
+        )
+        print("simple prompt # " + str(i))
+      else:
+        query = instructionTonePrompt.format(
+            input = df.loc[str(i),"prompt"],
+            testCase = df.loc[str(i), "test"]
+        )
+        print("instruction tone prompt # " + str(i))
       output = getOutputFromGPT(query)
       time.sleep(2)
-      chatGPTCode.at[i,"canonical_solution"] = output
-      chatGPTCode.to_csv("sample_data/GPT_Code_Output", index=False)
+      GPTCode.at[i,"canonical_solution"] = output
     else:
-      improvedChatGPTCode.at[i,"task_id"] = i
-      query = improvedChatGPTPrompt.format(
-          inputCode = df.loc[str(i),"prompt"],
+      improvedGPTCode.at[i,"task_id"] = i
+      query = improvedPrompt.format(
+          input = df.loc[str(i),"prompt"],
           testCase = df.loc[str(i), "test"],
           solution = df.loc[str(i), "canonical_solution"]
       )
+      print("improved prompt # " + str(i))
       output = getOutputFromGPT(query)
+      improvedGPTCode.at[i,"canonical_solution"] = output
       time.sleep(2)
-      improvedChatGPTCode.at[i,"canonical_solution"] = output
-      improvedChatGPTCode.to_csv("sample_data/GPT_Code_Output", index=False)
-
   table = PrettyTable()
 
   # Set the field names (column names)
-  table.field_names = chatGPTCode.columns.tolist() if len(chatGPTCode) > 0 else improvedChatGPTCode.columns.tolist()
+  table.field_names = GPTCode.columns.tolist() if len(GPTCode) > 0 else improvedGPTCode.columns.tolist()
 
   # Add rows to the table
-  for index, row in chatGPTCode.iterrows():
+  for index, row in GPTCode.iterrows():
       table.add_row(row.tolist())
 
   print(table)
-  print(len(chatGPTCode))
+  print(len(GPTCode))
 
 
-# writeChatGPTCodeInDataFrame(2)
+# writeGPTCodeInDataFrame(2)
 
 """# **Step 5: Writing Code in File**"""
 
@@ -219,16 +232,16 @@ def writeCodeInFile(basePath, folderName,choice):
     reportPath = os.path.join(basePath,reportFolderName)
     createFolder(completePath)
     createFolder(reportPath)
-    length = len(chatGPTCode) if len(chatGPTCode) > 0 else len(improvedChatGPTCode)
+    length = len(GPTCode) if len(GPTCode) > 0 else len(improvedGPTCode)
     for i in range(length):
         fileName = reportFileCommonName + str(i) + '.py'
         filePath = os.path.join(completePath, fileName)
 
         # Extract and clean solution
-        if(choice == 1):
-          solution = preprocessCode(str(chatGPTCode.loc[i, 'canonical_solution']))
+        if(choice == 1 or choice == 2):
+          solution = preprocessCode(str(GPTCode.loc[i, 'canonical_solution']))
         else:
-          solution = preprocessCode(str(improvedChatGPTCode.loc[i, 'canonical_solution']))
+          solution = preprocessCode(str(improvedGPTCode.loc[i, 'canonical_solution']))
 
         # solution = removeLeadingSpaces(solution, 2)
 
@@ -350,19 +363,6 @@ def runComplexipy(folderName):
 
 """# **Step 9: Run Radon**"""
 
-def get_radon_metrics(file_path):
-    with open(file_path, 'r') as file:
-        code = file.read()
-
-        # Calculate metrics
-        raw_metrics = analyze(code)
-        complexity_metrics = cc_visit(code)
-        maintainability_index = mi_visit(code, True)
-        halstead_metrics = h_visit(code)
-
-        return raw_metrics, complexity_metrics, maintainability_index, halstead_metrics
-
-
 def runRadon(folderName):
   completePath = os.path.join(basePath, folderName)
   reportPath = os.path.join(basePath, reportFolderName)
@@ -418,8 +418,8 @@ def runRadon(folderName):
 
 """# **Step 10: Function Call**"""
 
-# writeChatGPTCodeInDataFrame(2)
-# writeCodeInFile(basePath, folderName,2)
+# writeGPTCodeInDataFrame(3)
+# writeCodeInFile(basePath, folderName,3)
 runRadon(folderName)
 runComplexipy(folderName)
 runPylint(folderName)
@@ -432,8 +432,8 @@ from google.colab import files
 
 
 # Specify the folder you want to zip and the output zip file name
-folder_path = 'sample_data/GPT_4_Improved'
+folder_path = 'sample_data/GPT_4_Improved_Prompt'
 
 # Create a zip file from the folder
-shutil.make_archive('sample_data/GPT_4_Improved', 'zip', folder_path)
-files.download('sample_data/GPT_4_Improved')
+shutil.make_archive('sample_data/GPT_4_Improved_Prompt', 'zip', folder_path)
+files.download('sample_data/GPT_4_Improved_Prompt')

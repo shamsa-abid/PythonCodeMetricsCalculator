@@ -1,0 +1,631 @@
+module,type,obj,line,column,endLine,endColumn,path,symbol,message,message-id
+147,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/147.py,missing-module-docstring,Missing module docstring,C0114
+147,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/147.py,invalid-name,"Module name ""147"" doesn't conform to snake_case naming style",C0103
+147,convention,get_max_triples,1,0,1.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/147.py,missing-function-docstring,Missing function or method docstring,C0116
+147,warning,get_max_triples,1,20,1.0,21.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/147.py,redefined-outer-name,Redefining name 'n' from outer scope (line 13),W0621
+147,convention,,13,0,13.0,1.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/147.py,invalid-name,"Constant name ""n"" doesn't conform to UPPER_CASE naming style",C0103
+115,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/115.py,missing-module-docstring,Missing module docstring,C0114
+115,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/115.py,invalid-name,"Module name ""115"" doesn't conform to snake_case naming style",C0103
+115,convention,max_fill,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/115.py,missing-function-docstring,Missing function or method docstring,C0116
+115,convention,max_fill,2,4,2.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/115.py,import-outside-toplevel,Import outside toplevel (math),C0415
+115,convention,,18,0,18.0,9.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/115.py,invalid-name,"Constant name ""capacity1"" doesn't conform to UPPER_CASE naming style",C0103
+115,convention,,22,0,22.0,9.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/115.py,invalid-name,"Constant name ""capacity2"" doesn't conform to UPPER_CASE naming style",C0103
+115,convention,,26,0,26.0,9.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/115.py,invalid-name,"Constant name ""capacity3"" doesn't conform to UPPER_CASE naming style",C0103
+128,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/128.py,missing-module-docstring,Missing module docstring,C0114
+128,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/128.py,invalid-name,"Module name ""128"" doesn't conform to snake_case naming style",C0103
+128,convention,prod_signs,1,0,1.0,14.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/128.py,missing-function-docstring,Missing function or method docstring,C0116
+43,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/43.py,missing-module-docstring,Missing module docstring,C0114
+43,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/43.py,invalid-name,"Module name ""43"" doesn't conform to snake_case naming style",C0103
+82,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/82.py,missing-module-docstring,Missing module docstring,C0114
+82,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/82.py,invalid-name,"Module name ""82"" doesn't conform to snake_case naming style",C0103
+82,convention,prime_length,1,0,1.0,16.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/82.py,missing-function-docstring,Missing function or method docstring,C0116
+84,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/84.py,missing-module-docstring,Missing module docstring,C0114
+84,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/84.py,invalid-name,"Module name ""84"" doesn't conform to snake_case naming style",C0103
+84,convention,solve,1,0,1.0,9.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/84.py,missing-function-docstring,Missing function or method docstring,C0116
+84,convention,solve,1,10,1.0,11.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/84.py,invalid-name,"Argument name ""N"" doesn't conform to snake_case naming style",C0103
+60,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/60.py,missing-module-docstring,Missing module docstring,C0114
+60,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/60.py,invalid-name,"Module name ""60"" doesn't conform to snake_case naming style",C0103
+22,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/22.py,missing-module-docstring,Missing module docstring,C0114
+22,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/22.py,invalid-name,"Module name ""22"" doesn't conform to snake_case naming style",C0103
+23,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/23.py,missing-module-docstring,Missing module docstring,C0114
+23,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/23.py,invalid-name,"Module name ""23"" doesn't conform to snake_case naming style",C0103
+40,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/40.py,missing-module-docstring,Missing module docstring,C0114
+40,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/40.py,invalid-name,"Module name ""40"" doesn't conform to snake_case naming style",C0103
+40,convention,triples_sum_to_zero,19,4,23.0,31.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/40.py,consider-using-enumerate,Consider using enumerate instead of iterating with range and len,C0200
+12,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/12.py,missing-module-docstring,Missing module docstring,C0114
+12,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/12.py,invalid-name,"Module name ""12"" doesn't conform to snake_case naming style",C0103
+12,convention,longest,2,0,2.0,11.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/12.py,missing-function-docstring,Missing function or method docstring,C0116
+12,error,longest,2,21,2.0,25.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/12.py,undefined-variable,Undefined variable 'List',E0602
+12,error,longest,2,35,2.0,43.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/12.py,undefined-variable,Undefined variable 'Optional',E0602
+111,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/111.py,missing-module-docstring,Missing module docstring,C0114
+111,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/111.py,invalid-name,"Module name ""111"" doesn't conform to snake_case naming style",C0103
+111,convention,histogram,1,0,1.0,13.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/111.py,missing-function-docstring,Missing function or method docstring,C0116
+112,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/112.py,missing-module-docstring,Missing module docstring,C0114
+112,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/112.py,invalid-name,"Module name ""112"" doesn't conform to snake_case naming style",C0103
+112,convention,reverse_delete,1,0,1.0,18.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/112.py,missing-function-docstring,Missing function or method docstring,C0116
+79,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/79.py,missing-module-docstring,Missing module docstring,C0114
+79,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/79.py,invalid-name,"Module name ""79"" doesn't conform to snake_case naming style",C0103
+79,convention,decimal_to_binary,1,0,1.0,21.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/79.py,missing-function-docstring,Missing function or method docstring,C0116
+31,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/31.py,missing-module-docstring,Missing module docstring,C0114
+31,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/31.py,invalid-name,"Module name ""31"" doesn't conform to snake_case naming style",C0103
+31,convention,is_prime,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/31.py,missing-function-docstring,Missing function or method docstring,C0116
+7,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/7.py,missing-module-docstring,Missing module docstring,C0114
+7,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/7.py,invalid-name,"Module name ""7"" doesn't conform to snake_case naming style",C0103
+7,convention,filter_by_substring,4,0,4.0,23.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/7.py,missing-function-docstring,Missing function or method docstring,C0116
+102,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/102.py,missing-module-docstring,Missing module docstring,C0114
+102,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/102.py,invalid-name,"Module name ""102"" doesn't conform to snake_case naming style",C0103
+102,convention,choose_num,1,0,1.0,14.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/102.py,missing-function-docstring,Missing function or method docstring,C0116
+65,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/65.py,missing-module-docstring,Missing module docstring,C0114
+65,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/65.py,invalid-name,"Module name ""65"" doesn't conform to snake_case naming style",C0103
+65,convention,circular_shift,1,0,1.0,18.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/65.py,missing-function-docstring,Missing function or method docstring,C0116
+65,refactor,circular_shift,3,4,6.0,46.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/65.py,no-else-return,"Unnecessary ""else"" after ""return"", remove the ""else"" and de-indent the code inside it",R1705
+69,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/69.py,missing-module-docstring,Missing module docstring,C0114
+69,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/69.py,invalid-name,"Module name ""69"" doesn't conform to snake_case naming style",C0103
+69,convention,search,1,0,1.0,10.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/69.py,missing-function-docstring,Missing function or method docstring,C0116
+69,refactor,search,12,11,12.0,37.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/69.py,chained-comparison,Simplify chained comparison between the operands,R1716
+141,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/141.py,missing-module-docstring,Missing module docstring,C0114
+141,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/141.py,invalid-name,"Module name ""141"" doesn't conform to snake_case naming style",C0103
+141,convention,file_name_check,1,0,1.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/141.py,missing-function-docstring,Missing function or method docstring,C0116
+44,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/44.py,missing-module-docstring,Missing module docstring,C0114
+44,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/44.py,invalid-name,"Module name ""44"" doesn't conform to snake_case naming style",C0103
+44,convention,change_base,1,0,1.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/44.py,missing-function-docstring,Missing function or method docstring,C0116
+107,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/107.py,missing-module-docstring,Missing module docstring,C0114
+107,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/107.py,invalid-name,"Module name ""107"" doesn't conform to snake_case naming style",C0103
+107,convention,is_palindrome,1,0,1.0,17.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/107.py,missing-function-docstring,Missing function or method docstring,C0116
+107,convention,even_odd_palindrome,5,0,5.0,23.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/107.py,missing-function-docstring,Missing function or method docstring,C0116
+81,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/81.py,missing-module-docstring,Missing module docstring,C0114
+81,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/81.py,invalid-name,"Module name ""81"" doesn't conform to snake_case naming style",C0103
+81,convention,numerical_letter_grade,1,0,1.0,26.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/81.py,missing-function-docstring,Missing function or method docstring,C0116
+81,refactor,numerical_letter_grade,1,0,1.0,26.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/81.py,too-many-branches,Too many branches (13/12),R0912
+103,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/103.py,missing-module-docstring,Missing module docstring,C0114
+103,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/103.py,invalid-name,"Module name ""103"" doesn't conform to snake_case naming style",C0103
+103,convention,rounded_avg,1,0,1.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/103.py,missing-function-docstring,Missing function or method docstring,C0116
+28,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/28.py,missing-module-docstring,Missing module docstring,C0114
+28,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/28.py,invalid-name,"Module name ""28"" doesn't conform to snake_case naming style",C0103
+28,convention,concatenate,5,0,5.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/28.py,missing-function-docstring,Missing function or method docstring,C0116
+73,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/73.py,missing-module-docstring,Missing module docstring,C0114
+73,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/73.py,invalid-name,"Module name ""73"" doesn't conform to snake_case naming style",C0103
+73,convention,smallest_change,2,0,2.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/73.py,missing-function-docstring,Missing function or method docstring,C0116
+3,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/3.py,missing-module-docstring,Missing module docstring,C0114
+3,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/3.py,invalid-name,"Module name ""3"" doesn't conform to snake_case naming style",C0103
+3,convention,below_zero,5,0,5.0,14.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/3.py,missing-function-docstring,Missing function or method docstring,C0116
+59,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/59.py,missing-module-docstring,Missing module docstring,C0114
+59,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/59.py,invalid-name,"Module name ""59"" doesn't conform to snake_case naming style",C0103
+59,convention,largest_prime_factor,1,0,1.0,24.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/59.py,missing-function-docstring,Missing function or method docstring,C0116
+136,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/136.py,missing-module-docstring,Missing module docstring,C0114
+136,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/136.py,invalid-name,"Module name ""136"" doesn't conform to snake_case naming style",C0103
+136,convention,largest_smallest_integers,1,0,1.0,29.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/136.py,missing-function-docstring,Missing function or method docstring,C0116
+140,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/140.py,missing-module-docstring,Missing module docstring,C0114
+140,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/140.py,invalid-name,"Module name ""140"" doesn't conform to snake_case naming style",C0103
+140,convention,fix_spaces,1,0,1.0,14.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/140.py,missing-function-docstring,Missing function or method docstring,C0116
+146,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/146.py,missing-module-docstring,Missing module docstring,C0114
+146,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/146.py,invalid-name,"Module name ""146"" doesn't conform to snake_case naming style",C0103
+146,convention,specialFilter,1,0,1.0,17.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/146.py,missing-function-docstring,Missing function or method docstring,C0116
+146,convention,specialFilter,1,0,1.0,17.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/146.py,invalid-name,"Function name ""specialFilter"" doesn't conform to snake_case naming style",C0103
+57,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/57.py,missing-module-docstring,Missing module docstring,C0114
+57,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/57.py,invalid-name,"Module name ""57"" doesn't conform to snake_case naming style",C0103
+57,convention,monotonic,1,0,1.0,13.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/57.py,missing-function-docstring,Missing function or method docstring,C0116
+94,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/94.py,missing-module-docstring,Missing module docstring,C0114
+94,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/94.py,invalid-name,"Module name ""94"" doesn't conform to snake_case naming style",C0103
+94,convention,skjkasdkd,1,0,1.0,13.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/94.py,missing-function-docstring,Missing function or method docstring,C0116
+34,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/34.py,missing-module-docstring,Missing module docstring,C0114
+34,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/34.py,invalid-name,"Module name ""34"" doesn't conform to snake_case naming style",C0103
+34,convention,unique,1,0,1.0,10.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/34.py,missing-function-docstring,Missing function or method docstring,C0116
+123,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/123.py,missing-module-docstring,Missing module docstring,C0114
+123,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/123.py,invalid-name,"Module name ""123"" doesn't conform to snake_case naming style",C0103
+123,convention,get_odd_collatz,1,0,1.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/123.py,missing-function-docstring,Missing function or method docstring,C0116
+11,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/11.py,missing-module-docstring,Missing module docstring,C0114
+11,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/11.py,invalid-name,"Module name ""11"" doesn't conform to snake_case naming style",C0103
+11,convention,string_xor,2,0,2.0,14.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/11.py,missing-function-docstring,Missing function or method docstring,C0116
+11,convention,string_xor,4,4,8.0,25.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/11.py,consider-using-enumerate,Consider using enumerate instead of iterating with range and len,C0200
+85,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/85.py,missing-module-docstring,Missing module docstring,C0114
+85,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/85.py,invalid-name,"Module name ""85"" doesn't conform to snake_case naming style",C0103
+85,convention,add,1,0,1.0,7.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/85.py,missing-function-docstring,Missing function or method docstring,C0116
+64,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/64.py,missing-module-docstring,Missing module docstring,C0114
+64,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/64.py,invalid-name,"Module name ""64"" doesn't conform to snake_case naming style",C0103
+64,convention,vowels_count,2,0,2.0,16.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/64.py,missing-function-docstring,Missing function or method docstring,C0116
+64,convention,vowels_count,6,4,10.0,22.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/64.py,consider-using-enumerate,Consider using enumerate instead of iterating with range and len,C0200
+91,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/91.py,missing-module-docstring,Missing module docstring,C0114
+91,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/91.py,invalid-name,"Module name ""91"" doesn't conform to snake_case naming style",C0103
+91,convention,is_bored,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/91.py,missing-function-docstring,Missing function or method docstring,C0116
+91,convention,is_bored,1,13,1.0,14.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/91.py,invalid-name,"Argument name ""S"" doesn't conform to snake_case naming style",C0103
+8,convention,,5,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/8.py,line-too-long,Line too long (117/100),C0301
+8,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/8.py,missing-module-docstring,Missing module docstring,C0114
+8,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/8.py,invalid-name,"Module name ""8"" doesn't conform to snake_case naming style",C0103
+98,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/98.py,missing-module-docstring,Missing module docstring,C0114
+98,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/98.py,invalid-name,"Module name ""98"" doesn't conform to snake_case naming style",C0103
+98,convention,count_upper,1,0,1.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/98.py,missing-function-docstring,Missing function or method docstring,C0116
+113,convention,,6,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/113.py,line-too-long,Line too long (108/100),C0301
+113,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/113.py,missing-module-docstring,Missing module docstring,C0114
+113,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/113.py,invalid-name,"Module name ""113"" doesn't conform to snake_case naming style",C0103
+113,convention,odd_count,1,0,1.0,13.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/113.py,missing-function-docstring,Missing function or method docstring,C0116
+113,warning,odd_count,4,8,4.0,17.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/113.py,redefined-outer-name,Redefining name 'odd_count' from outer scope (line 1),W0621
+155,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/155.py,missing-module-docstring,Missing module docstring,C0114
+155,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/155.py,invalid-name,"Module name ""155"" doesn't conform to snake_case naming style",C0103
+155,convention,even_odd_count,1,0,1.0,18.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/155.py,missing-function-docstring,Missing function or method docstring,C0116
+158,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/158.py,missing-module-docstring,Missing module docstring,C0114
+158,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/158.py,invalid-name,"Module name ""158"" doesn't conform to snake_case naming style",C0103
+158,convention,find_max,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/158.py,missing-function-docstring,Missing function or method docstring,C0116
+139,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/139.py,missing-module-docstring,Missing module docstring,C0114
+139,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/139.py,invalid-name,"Module name ""139"" doesn't conform to snake_case naming style",C0103
+139,convention,special_factorial,2,0,2.0,21.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/139.py,missing-function-docstring,Missing function or method docstring,C0116
+156,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/156.py,missing-module-docstring,Missing module docstring,C0114
+156,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/156.py,invalid-name,"Module name ""156"" doesn't conform to snake_case naming style",C0103
+156,convention,int_to_mini_roman,1,0,1.0,21.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/156.py,missing-function-docstring,Missing function or method docstring,C0116
+86,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/86.py,missing-module-docstring,Missing module docstring,C0114
+86,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/86.py,invalid-name,"Module name ""86"" doesn't conform to snake_case naming style",C0103
+86,convention,anti_shuffle,1,0,1.0,16.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/86.py,missing-function-docstring,Missing function or method docstring,C0116
+124,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/124.py,missing-module-docstring,Missing module docstring,C0114
+124,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/124.py,invalid-name,"Module name ""124"" doesn't conform to snake_case naming style",C0103
+124,convention,valid_date,1,0,1.0,14.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/124.py,missing-function-docstring,Missing function or method docstring,C0116
+124,refactor,valid_date,1,0,1.0,14.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/124.py,too-many-return-statements,Too many return statements (10/6),R0911
+70,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/70.py,missing-module-docstring,Missing module docstring,C0114
+70,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/70.py,invalid-name,"Module name ""70"" doesn't conform to snake_case naming style",C0103
+70,convention,strange_sort_list,1,0,1.0,21.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/70.py,missing-function-docstring,Missing function or method docstring,C0116
+105,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/105.py,missing-module-docstring,Missing module docstring,C0114
+105,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/105.py,invalid-name,"Module name ""105"" doesn't conform to snake_case naming style",C0103
+105,convention,by_length,1,0,1.0,13.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/105.py,missing-function-docstring,Missing function or method docstring,C0116
+137,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/137.py,missing-module-docstring,Missing module docstring,C0114
+137,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/137.py,invalid-name,"Module name ""137"" doesn't conform to snake_case naming style",C0103
+137,convention,compare_one,1,0,1.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/137.py,missing-function-docstring,Missing function or method docstring,C0116
+137,convention,compare_one,2,7,2.0,25.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/137.py,unidiomatic-typecheck,Use isinstance() rather than type() for a typecheck.,C0123
+137,refactor,compare_one,3,8,8.0,20.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/137.py,no-else-return,"Unnecessary ""elif"" after ""return"", remove the leading ""el"" from ""elif""",R1705
+133,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/133.py,missing-module-docstring,Missing module docstring,C0114
+133,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/133.py,invalid-name,"Module name ""133"" doesn't conform to snake_case naming style",C0103
+133,convention,sum_squares,1,0,1.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/133.py,missing-function-docstring,Missing function or method docstring,C0116
+110,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/110.py,missing-module-docstring,Missing module docstring,C0114
+110,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/110.py,invalid-name,"Module name ""110"" doesn't conform to snake_case naming style",C0103
+110,convention,exchange,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/110.py,missing-function-docstring,Missing function or method docstring,C0116
+110,refactor,exchange,9,4,12.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/110.py,no-else-return,"Unnecessary ""else"" after ""return"", remove the ""else"" and de-indent the code inside it",R1705
+77,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/77.py,missing-module-docstring,Missing module docstring,C0114
+77,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/77.py,invalid-name,"Module name ""77"" doesn't conform to snake_case naming style",C0103
+14,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/14.py,missing-module-docstring,Missing module docstring,C0114
+14,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/14.py,invalid-name,"Module name ""14"" doesn't conform to snake_case naming style",C0103
+14,convention,all_prefixes,5,0,5.0,16.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/14.py,missing-function-docstring,Missing function or method docstring,C0116
+97,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/97.py,missing-module-docstring,Missing module docstring,C0114
+97,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/97.py,invalid-name,"Module name ""97"" doesn't conform to snake_case naming style",C0103
+97,convention,multiply,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/97.py,missing-function-docstring,Missing function or method docstring,C0116
+131,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/131.py,missing-module-docstring,Missing module docstring,C0114
+131,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/131.py,invalid-name,"Module name ""131"" doesn't conform to snake_case naming style",C0103
+131,convention,digits,1,0,1.0,10.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/131.py,missing-function-docstring,Missing function or method docstring,C0116
+131,refactor,digits,7,4,10.0,21.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/131.py,no-else-return,"Unnecessary ""else"" after ""return"", remove the ""else"" and de-indent the code inside it",R1705
+55,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/55.py,missing-module-docstring,Missing module docstring,C0114
+55,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/55.py,invalid-name,"Module name ""55"" doesn't conform to snake_case naming style",C0103
+55,convention,fib,1,0,1.0,7.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/55.py,missing-function-docstring,Missing function or method docstring,C0116
+49,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/49.py,missing-module-docstring,Missing module docstring,C0114
+49,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/49.py,invalid-name,"Module name ""49"" doesn't conform to snake_case naming style",C0103
+49,convention,modp,1,0,1.0,8.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/49.py,missing-function-docstring,Missing function or method docstring,C0116
+53,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/53.py,missing-module-docstring,Missing module docstring,C0114
+53,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/53.py,invalid-name,"Module name ""53"" doesn't conform to snake_case naming style",C0103
+53,convention,add,1,0,1.0,7.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/53.py,missing-function-docstring,Missing function or method docstring,C0116
+121,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/121.py,missing-module-docstring,Missing module docstring,C0114
+121,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/121.py,invalid-name,"Module name ""121"" doesn't conform to snake_case naming style",C0103
+121,convention,solution,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/121.py,missing-function-docstring,Missing function or method docstring,C0116
+48,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/48.py,missing-module-docstring,Missing module docstring,C0114
+48,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/48.py,invalid-name,"Module name ""48"" doesn't conform to snake_case naming style",C0103
+48,convention,is_palindrome,1,0,1.0,17.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/48.py,missing-function-docstring,Missing function or method docstring,C0116
+9,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/9.py,missing-module-docstring,Missing module docstring,C0114
+9,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/9.py,invalid-name,"Module name ""9"" doesn't conform to snake_case naming style",C0103
+9,convention,rolling_max,2,0,2.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/9.py,missing-function-docstring,Missing function or method docstring,C0116
+9,error,rolling_max,2,25,2.0,29.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/9.py,undefined-variable,Undefined variable 'List',E0602
+9,error,rolling_max,2,39,2.0,43.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/9.py,undefined-variable,Undefined variable 'List',E0602
+54,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/54.py,missing-module-docstring,Missing module docstring,C0114
+54,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/54.py,invalid-name,"Module name ""54"" doesn't conform to snake_case naming style",C0103
+54,convention,same_chars,1,0,1.0,14.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/54.py,missing-function-docstring,Missing function or method docstring,C0116
+160,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/160.py,missing-module-docstring,Missing module docstring,C0114
+160,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/160.py,invalid-name,"Module name ""160"" doesn't conform to snake_case naming style",C0103
+160,convention,do_algebra,1,0,1.0,14.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/160.py,missing-function-docstring,Missing function or method docstring,C0116
+160,warning,do_algebra,1,15,1.0,23.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/160.py,redefined-outer-name,Redefining name 'operator' from outer scope (line 26),W0621
+160,warning,do_algebra,1,25,1.0,32.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/160.py,redefined-outer-name,Redefining name 'operand' from outer scope (line 27),W0621
+160,convention,do_algebra,7,4,20.0,35.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/160.py,consider-using-enumerate,Consider using enumerate instead of iterating with range and len,C0200
+27,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/27.py,missing-module-docstring,Missing module docstring,C0114
+27,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/27.py,invalid-name,"Module name ""27"" doesn't conform to snake_case naming style",C0103
+27,convention,flip_case,1,0,1.0,13.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/27.py,missing-function-docstring,Missing function or method docstring,C0116
+51,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/51.py,missing-module-docstring,Missing module docstring,C0114
+51,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/51.py,invalid-name,"Module name ""51"" doesn't conform to snake_case naming style",C0103
+51,convention,remove_vowels,1,0,1.0,17.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/51.py,missing-function-docstring,Missing function or method docstring,C0116
+159,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/159.py,missing-module-docstring,Missing module docstring,C0114
+159,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/159.py,invalid-name,"Module name ""159"" doesn't conform to snake_case naming style",C0103
+159,convention,eat,1,0,1.0,7.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/159.py,missing-function-docstring,Missing function or method docstring,C0116
+37,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/37.py,missing-module-docstring,Missing module docstring,C0114
+37,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/37.py,invalid-name,"Module name ""37"" doesn't conform to snake_case naming style",C0103
+37,convention,sort_even,1,0,1.0,13.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/37.py,missing-function-docstring,Missing function or method docstring,C0116
+37,refactor,sort_even,2,25,2.0,44.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/37.py,unnecessary-comprehension,"Unnecessary use of a comprehension, use list(l[::2]) instead.",R1721
+92,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/92.py,missing-module-docstring,Missing module docstring,C0114
+92,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/92.py,invalid-name,"Module name ""92"" doesn't conform to snake_case naming style",C0103
+92,convention,any_int,1,0,1.0,11.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/92.py,missing-function-docstring,Missing function or method docstring,C0116
+92,refactor,any_int,2,4,5.0,20.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/92.py,no-else-return,"Unnecessary ""else"" after ""return"", remove the ""else"" and de-indent the code inside it",R1705
+72,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/72.py,missing-module-docstring,Missing module docstring,C0114
+72,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/72.py,invalid-name,"Module name ""72"" doesn't conform to snake_case naming style",C0103
+72,convention,will_it_fly,1,0,1.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/72.py,missing-function-docstring,Missing function or method docstring,C0116
+72,refactor,will_it_fly,2,4,5.0,20.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/72.py,simplifiable-if-statement,The if statement can be replaced with 'return bool(test)',R1703
+72,refactor,will_it_fly,2,4,5.0,20.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/72.py,no-else-return,"Unnecessary ""else"" after ""return"", remove the ""else"" and de-indent the code inside it",R1705
+33,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/33.py,missing-module-docstring,Missing module docstring,C0114
+33,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/33.py,invalid-name,"Module name ""33"" doesn't conform to snake_case naming style",C0103
+33,convention,sort_third,1,0,1.0,14.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/33.py,missing-function-docstring,Missing function or method docstring,C0116
+19,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/19.py,missing-module-docstring,Missing module docstring,C0114
+19,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/19.py,invalid-name,"Module name ""19"" doesn't conform to snake_case naming style",C0103
+19,convention,sort_numbers,5,0,5.0,16.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/19.py,missing-function-docstring,Missing function or method docstring,C0116
+19,warning,,2,0,2.0,23.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/19.py,unused-import,Unused List imported from typing,W0611
+100,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/100.py,missing-module-docstring,Missing module docstring,C0114
+100,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/100.py,invalid-name,"Module name ""100"" doesn't conform to snake_case naming style",C0103
+100,convention,make_a_pile,1,0,1.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/100.py,missing-function-docstring,Missing function or method docstring,C0116
+126,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/126.py,missing-module-docstring,Missing module docstring,C0114
+126,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/126.py,invalid-name,"Module name ""126"" doesn't conform to snake_case naming style",C0103
+126,convention,is_sorted,1,0,1.0,13.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/126.py,missing-function-docstring,Missing function or method docstring,C0116
+52,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/52.py,missing-module-docstring,Missing module docstring,C0114
+52,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/52.py,invalid-name,"Module name ""52"" doesn't conform to snake_case naming style",C0103
+50,convention,,5,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/50.py,line-too-long,Line too long (105/100),C0301
+50,convention,,12,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/50.py,line-too-long,Line too long (105/100),C0301
+50,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/50.py,missing-module-docstring,Missing module docstring,C0114
+50,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/50.py,invalid-name,"Module name ""50"" doesn't conform to snake_case naming style",C0103
+119,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/119.py,missing-module-docstring,Missing module docstring,C0114
+119,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/119.py,invalid-name,"Module name ""119"" doesn't conform to snake_case naming style",C0103
+119,convention,match_parens,1,0,1.0,16.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/119.py,missing-function-docstring,Missing function or method docstring,C0116
+119,refactor,match_parens,11,4,14.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/119.py,no-else-return,"Unnecessary ""else"" after ""return"", remove the ""else"" and de-indent the code inside it",R1705
+108,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/108.py,missing-module-docstring,Missing module docstring,C0114
+108,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/108.py,invalid-name,"Module name ""108"" doesn't conform to snake_case naming style",C0103
+108,convention,count_nums,1,0,1.0,14.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/108.py,missing-function-docstring,Missing function or method docstring,C0116
+108,refactor,count_nums.sum_of_digits,3,8,8.0,75.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/108.py,no-else-return,"Unnecessary ""elif"" after ""return"", remove the leading ""el"" from ""elif""",R1705
+163,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/163.py,missing-module-docstring,Missing module docstring,C0114
+163,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/163.py,invalid-name,"Module name ""163"" doesn't conform to snake_case naming style",C0103
+163,convention,generate_integers,2,0,2.0,21.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/163.py,missing-function-docstring,Missing function or method docstring,C0116
+38,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/38.py,missing-module-docstring,Missing module docstring,C0114
+38,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/38.py,invalid-name,"Module name ""38"" doesn't conform to snake_case naming style",C0103
+38,convention,encode_cyclic,1,0,1.0,17.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/38.py,missing-function-docstring,Missing function or method docstring,C0116
+38,convention,decode_cyclic,9,0,9.0,17.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/38.py,missing-function-docstring,Missing function or method docstring,C0116
+5,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/5.py,missing-module-docstring,Missing module docstring,C0114
+5,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/5.py,invalid-name,"Module name ""5"" doesn't conform to snake_case naming style",C0103
+5,convention,intersperse,5,0,5.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/5.py,missing-function-docstring,Missing function or method docstring,C0116
+142,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/142.py,missing-module-docstring,Missing module docstring,C0114
+142,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/142.py,invalid-name,"Module name ""142"" doesn't conform to snake_case naming style",C0103
+142,convention,sum_squares,2,0,2.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/142.py,missing-function-docstring,Missing function or method docstring,C0116
+142,convention,sum_squares,4,4,8.0,32.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/142.py,consider-using-enumerate,Consider using enumerate instead of iterating with range and len,C0200
+4,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/4.py,missing-module-docstring,Missing module docstring,C0114
+4,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/4.py,invalid-name,"Module name ""4"" doesn't conform to snake_case naming style",C0103
+58,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/58.py,missing-module-docstring,Missing module docstring,C0114
+58,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/58.py,invalid-name,"Module name ""58"" doesn't conform to snake_case naming style",C0103
+93,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/93.py,missing-module-docstring,Missing module docstring,C0114
+93,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/93.py,invalid-name,"Module name ""93"" doesn't conform to snake_case naming style",C0103
+93,convention,encode,1,0,1.0,10.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/93.py,missing-function-docstring,Missing function or method docstring,C0116
+29,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/29.py,missing-module-docstring,Missing module docstring,C0114
+29,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/29.py,invalid-name,"Module name ""29"" doesn't conform to snake_case naming style",C0103
+29,convention,filter_by_prefix,5,0,5.0,20.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/29.py,missing-function-docstring,Missing function or method docstring,C0116
+127,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/127.py,missing-module-docstring,Missing module docstring,C0114
+127,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/127.py,invalid-name,"Module name ""127"" doesn't conform to snake_case naming style",C0103
+127,convention,is_prime,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/127.py,missing-function-docstring,Missing function or method docstring,C0116
+127,convention,intersection,10,0,10.0,16.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/127.py,missing-function-docstring,Missing function or method docstring,C0116
+127,refactor,intersection,22,4,25.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/127.py,no-else-return,"Unnecessary ""else"" after ""return"", remove the ""else"" and de-indent the code inside it",R1705
+104,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/104.py,missing-module-docstring,Missing module docstring,C0114
+104,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/104.py,invalid-name,"Module name ""104"" doesn't conform to snake_case naming style",C0103
+104,convention,unique_digits,1,0,1.0,17.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/104.py,missing-function-docstring,Missing function or method docstring,C0116
+99,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/99.py,missing-module-docstring,Missing module docstring,C0114
+99,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/99.py,invalid-name,"Module name ""99"" doesn't conform to snake_case naming style",C0103
+99,convention,closest_integer,1,0,1.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/99.py,missing-function-docstring,Missing function or method docstring,C0116
+99,refactor,closest_integer,3,4,8.0,27.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/99.py,no-else-return,"Unnecessary ""elif"" after ""return"", remove the leading ""el"" from ""elif""",R1705
+68,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/68.py,missing-module-docstring,Missing module docstring,C0114
+68,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/68.py,invalid-name,"Module name ""68"" doesn't conform to snake_case naming style",C0103
+68,convention,pluck,1,0,1.0,9.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/68.py,missing-function-docstring,Missing function or method docstring,C0116
+135,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/135.py,missing-module-docstring,Missing module docstring,C0114
+135,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/135.py,invalid-name,"Module name ""135"" doesn't conform to snake_case naming style",C0103
+135,convention,can_arrange,1,0,1.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/135.py,missing-function-docstring,Missing function or method docstring,C0116
+71,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/71.py,missing-module-docstring,Missing module docstring,C0114
+71,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/71.py,invalid-name,"Module name ""71"" doesn't conform to snake_case naming style",C0103
+71,convention,triangle_area,1,0,1.0,17.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/71.py,missing-function-docstring,Missing function or method docstring,C0116
+71,refactor,triangle_area,2,4,7.0,17.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/71.py,no-else-return,"Unnecessary ""else"" after ""return"", remove the ""else"" and de-indent the code inside it",R1705
+89,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/89.py,missing-module-docstring,Missing module docstring,C0114
+89,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/89.py,invalid-name,"Module name ""89"" doesn't conform to snake_case naming style",C0103
+89,convention,encrypt,1,0,1.0,11.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/89.py,missing-function-docstring,Missing function or method docstring,C0116
+20,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/20.py,missing-module-docstring,Missing module docstring,C0114
+20,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/20.py,invalid-name,"Module name ""20"" doesn't conform to snake_case naming style",C0103
+20,convention,find_closest_elements,5,0,5.0,25.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/20.py,missing-function-docstring,Missing function or method docstring,C0116
+87,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/87.py,missing-module-docstring,Missing module docstring,C0114
+87,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/87.py,invalid-name,"Module name ""87"" doesn't conform to snake_case naming style",C0103
+87,convention,get_row,2,0,2.0,11.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/87.py,missing-function-docstring,Missing function or method docstring,C0116
+25,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/25.py,missing-module-docstring,Missing module docstring,C0114
+25,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/25.py,invalid-name,"Module name ""25"" doesn't conform to snake_case naming style",C0103
+25,convention,factorize,2,0,2.0,13.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/25.py,missing-function-docstring,Missing function or method docstring,C0116
+25,error,factorize,2,25,2.0,29.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/25.py,undefined-variable,Undefined variable 'List',E0602
+117,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/117.py,missing-module-docstring,Missing module docstring,C0114
+117,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/117.py,invalid-name,"Module name ""117"" doesn't conform to snake_case naming style",C0103
+117,convention,select_words,1,0,1.0,16.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/117.py,missing-function-docstring,Missing function or method docstring,C0116
+148,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/148.py,missing-module-docstring,Missing module docstring,C0114
+148,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/148.py,invalid-name,"Module name ""148"" doesn't conform to snake_case naming style",C0103
+148,convention,bf,1,0,1.0,6.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/148.py,missing-function-docstring,Missing function or method docstring,C0116
+62,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/62.py,missing-module-docstring,Missing module docstring,C0114
+62,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/62.py,invalid-name,"Module name ""62"" doesn't conform to snake_case naming style",C0103
+134,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/134.py,missing-module-docstring,Missing module docstring,C0114
+134,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/134.py,invalid-name,"Module name ""134"" doesn't conform to snake_case naming style",C0103
+134,convention,check_if_last_char_is_a_letter,1,0,1.0,34.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/134.py,missing-function-docstring,Missing function or method docstring,C0116
+42,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/42.py,missing-module-docstring,Missing module docstring,C0114
+42,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/42.py,invalid-name,"Module name ""42"" doesn't conform to snake_case naming style",C0103
+42,convention,incr_list,1,0,1.0,13.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/42.py,missing-function-docstring,Missing function or method docstring,C0116
+138,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/138.py,missing-module-docstring,Missing module docstring,C0114
+138,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/138.py,invalid-name,"Module name ""138"" doesn't conform to snake_case naming style",C0103
+138,convention,is_equal_to_sum_even,1,0,1.0,24.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/138.py,missing-function-docstring,Missing function or method docstring,C0116
+24,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/24.py,missing-module-docstring,Missing module docstring,C0114
+24,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/24.py,invalid-name,"Module name ""24"" doesn't conform to snake_case naming style",C0103
+24,convention,largest_divisor,2,0,2.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/24.py,missing-function-docstring,Missing function or method docstring,C0116
+24,refactor,largest_divisor,2,0,2.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/24.py,inconsistent-return-statements,"Either all return statements in a function should return an expression, or none of them should.",R1710
+144,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/144.py,missing-module-docstring,Missing module docstring,C0114
+144,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/144.py,invalid-name,"Module name ""144"" doesn't conform to snake_case naming style",C0103
+144,convention,simplify,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/144.py,missing-function-docstring,Missing function or method docstring,C0116
+120,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/120.py,missing-module-docstring,Missing module docstring,C0114
+120,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/120.py,invalid-name,"Module name ""120"" doesn't conform to snake_case naming style",C0103
+120,convention,maximum,1,0,1.0,11.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/120.py,missing-function-docstring,Missing function or method docstring,C0116
+120,convention,,8,0,8.0,2.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/120.py,invalid-name,"Constant name ""k1"" doesn't conform to UPPER_CASE naming style",C0103
+120,convention,,12,0,12.0,2.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/120.py,invalid-name,"Constant name ""k2"" doesn't conform to UPPER_CASE naming style",C0103
+120,convention,,16,0,16.0,2.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/120.py,invalid-name,"Constant name ""k3"" doesn't conform to UPPER_CASE naming style",C0103
+114,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/114.py,missing-module-docstring,Missing module docstring,C0114
+114,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/114.py,invalid-name,"Module name ""114"" doesn't conform to snake_case naming style",C0103
+114,convention,minSubArraySum,1,0,1.0,18.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/114.py,missing-function-docstring,Missing function or method docstring,C0116
+114,convention,minSubArraySum,1,0,1.0,18.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/114.py,invalid-name,"Function name ""minSubArraySum"" doesn't conform to snake_case naming style",C0103
+0,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/0.py,missing-module-docstring,Missing module docstring,C0114
+0,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/0.py,invalid-name,"Module name ""0"" doesn't conform to snake_case naming style",C0103
+0,convention,has_close_elements,12,4,15.0,27.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/0.py,consider-using-enumerate,Consider using enumerate instead of iterating with range and len,C0200
+17,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/17.py,missing-module-docstring,Missing module docstring,C0114
+17,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/17.py,invalid-name,"Module name ""17"" doesn't conform to snake_case naming style",C0103
+17,convention,parse_music,5,0,5.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/17.py,missing-function-docstring,Missing function or method docstring,C0116
+32,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/32.py,missing-module-docstring,Missing module docstring,C0114
+32,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/32.py,invalid-name,"Module name ""32"" doesn't conform to snake_case naming style",C0103
+32,refactor,find_zero.poly,14,15,14.0,74.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/32.py,consider-using-generator,"Consider using a generator instead 'sum(coeff * math.pow(x, i) for (i, coeff) in enumerate(xs))'",R1728
+32,error,find_zero.poly,14,28,14.0,32.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/32.py,undefined-variable,Undefined variable 'math',E0602
+32,refactor,find_zero,26,16,26.0,54.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/32.py,consider-using-generator,Consider using a generator instead 'max(abs(coeff) for coeff in xs[:-1])',R1728
+32,warning,find_zero,26,4,26.0,13.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/32.py,unused-variable,Unused variable 'max_coeff',W0612
+101,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/101.py,missing-module-docstring,Missing module docstring,C0114
+101,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/101.py,invalid-name,"Module name ""101"" doesn't conform to snake_case naming style",C0103
+101,convention,words_string,1,0,1.0,16.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/101.py,missing-function-docstring,Missing function or method docstring,C0116
+41,convention,,15,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/41.py,line-too-long,Line too long (190/100),C0301
+41,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/41.py,missing-module-docstring,Missing module docstring,C0114
+41,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/41.py,invalid-name,"Module name ""41"" doesn't conform to snake_case naming style",C0103
+35,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/35.py,missing-module-docstring,Missing module docstring,C0114
+35,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/35.py,invalid-name,"Module name ""35"" doesn't conform to snake_case naming style",C0103
+90,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/90.py,missing-module-docstring,Missing module docstring,C0114
+90,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/90.py,invalid-name,"Module name ""90"" doesn't conform to snake_case naming style",C0103
+90,convention,next_smallest,1,0,1.0,17.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/90.py,missing-function-docstring,Missing function or method docstring,C0116
+90,refactor,next_smallest,4,4,7.0,29.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/90.py,no-else-return,"Unnecessary ""else"" after ""return"", remove the ""else"" and de-indent the code inside it",R1705
+18,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/18.py,missing-module-docstring,Missing module docstring,C0114
+18,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/18.py,invalid-name,"Module name ""18"" doesn't conform to snake_case naming style",C0103
+18,convention,how_many_times,1,0,1.0,18.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/18.py,missing-function-docstring,Missing function or method docstring,C0116
+116,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/116.py,missing-module-docstring,Missing module docstring,C0114
+116,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/116.py,invalid-name,"Module name ""116"" doesn't conform to snake_case naming style",C0103
+116,convention,sort_array,1,0,1.0,14.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/116.py,missing-function-docstring,Missing function or method docstring,C0116
+66,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/66.py,missing-module-docstring,Missing module docstring,C0114
+66,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/66.py,invalid-name,"Module name ""66"" doesn't conform to snake_case naming style",C0103
+66,convention,digitSum,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/66.py,missing-function-docstring,Missing function or method docstring,C0116
+66,convention,digitSum,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/66.py,invalid-name,"Function name ""digitSum"" doesn't conform to snake_case naming style",C0103
+36,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/36.py,missing-module-docstring,Missing module docstring,C0114
+36,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/36.py,invalid-name,"Module name ""36"" doesn't conform to snake_case naming style",C0103
+36,convention,fizz_buzz,1,0,1.0,13.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/36.py,missing-function-docstring,Missing function or method docstring,C0116
+47,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/47.py,missing-module-docstring,Missing module docstring,C0114
+47,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/47.py,invalid-name,"Module name ""47"" doesn't conform to snake_case naming style",C0103
+47,convention,median,1,0,1.0,10.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/47.py,missing-function-docstring,Missing function or method docstring,C0116
+47,warning,median,8,8,8.0,14.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/47.py,redefined-outer-name,Redefining name 'median' from outer scope (line 1),W0621
+16,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/16.py,missing-module-docstring,Missing module docstring,C0114
+16,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/16.py,invalid-name,"Module name ""16"" doesn't conform to snake_case naming style",C0103
+16,convention,count_distinct_characters,1,0,1.0,29.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/16.py,missing-function-docstring,Missing function or method docstring,C0116
+63,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/63.py,missing-module-docstring,Missing module docstring,C0114
+63,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/63.py,invalid-name,"Module name ""63"" doesn't conform to snake_case naming style",C0103
+63,convention,fibfib,2,0,2.0,10.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/63.py,missing-function-docstring,Missing function or method docstring,C0116
+63,refactor,fibfib,3,4,18.0,18.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/63.py,no-else-return,"Unnecessary ""elif"" after ""return"", remove the leading ""el"" from ""elif""",R1705
+63,warning,fibfib,13,12,13.0,13.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/63.py,unused-variable,Unused variable 'i',W0612
+26,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/26.py,missing-module-docstring,Missing module docstring,C0114
+26,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/26.py,invalid-name,"Module name ""26"" doesn't conform to snake_case naming style",C0103
+26,convention,remove_duplicates,4,0,4.0,21.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/26.py,missing-function-docstring,Missing function or method docstring,C0116
+150,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/150.py,missing-module-docstring,Missing module docstring,C0114
+150,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/150.py,invalid-name,"Module name ""150"" doesn't conform to snake_case naming style",C0103
+150,convention,is_prime,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/150.py,missing-function-docstring,Missing function or method docstring,C0116
+150,convention,x_or_y,16,0,16.0,10.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/150.py,missing-function-docstring,Missing function or method docstring,C0116
+150,refactor,x_or_y,17,4,20.0,16.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/150.py,no-else-return,"Unnecessary ""else"" after ""return"", remove the ""else"" and de-indent the code inside it",R1705
+13,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/13.py,missing-module-docstring,Missing module docstring,C0114
+13,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/13.py,invalid-name,"Module name ""13"" doesn't conform to snake_case naming style",C0103
+161,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/161.py,missing-module-docstring,Missing module docstring,C0114
+161,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/161.py,invalid-name,"Module name ""161"" doesn't conform to snake_case naming style",C0103
+161,convention,solve,1,0,1.0,9.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/161.py,missing-function-docstring,Missing function or method docstring,C0116
+109,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/109.py,missing-module-docstring,Missing module docstring,C0114
+109,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/109.py,invalid-name,"Module name ""109"" doesn't conform to snake_case naming style",C0103
+109,convention,move_one_ball,2,0,2.0,17.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/109.py,missing-function-docstring,Missing function or method docstring,C0116
+109,warning,move_one_ball,9,8,9.0,9.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/109.py,unused-variable,Unused variable 'i',W0612
+151,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/151.py,missing-module-docstring,Missing module docstring,C0114
+151,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/151.py,invalid-name,"Module name ""151"" doesn't conform to snake_case naming style",C0103
+130,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/130.py,missing-module-docstring,Missing module docstring,C0114
+130,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/130.py,invalid-name,"Module name ""130"" doesn't conform to snake_case naming style",C0103
+130,convention,tri,1,0,1.0,7.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/130.py,missing-function-docstring,Missing function or method docstring,C0116
+130,refactor,tri,2,4,7.0,24.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/130.py,no-else-return,"Unnecessary ""elif"" after ""return"", remove the leading ""el"" from ""elif""",R1705
+67,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/67.py,missing-module-docstring,Missing module docstring,C0114
+67,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/67.py,invalid-name,"Module name ""67"" doesn't conform to snake_case naming style",C0103
+67,convention,fruit_distribution,1,0,1.0,22.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/67.py,missing-function-docstring,Missing function or method docstring,C0116
+45,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/45.py,missing-module-docstring,Missing module docstring,C0114
+45,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/45.py,invalid-name,"Module name ""45"" doesn't conform to snake_case naming style",C0103
+88,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/88.py,missing-module-docstring,Missing module docstring,C0114
+88,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/88.py,invalid-name,"Module name ""88"" doesn't conform to snake_case naming style",C0103
+88,convention,sort_array,1,0,1.0,14.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/88.py,missing-function-docstring,Missing function or method docstring,C0116
+152,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/152.py,missing-module-docstring,Missing module docstring,C0114
+152,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/152.py,invalid-name,"Module name ""152"" doesn't conform to snake_case naming style",C0103
+152,convention,compare,1,0,1.0,11.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/152.py,missing-function-docstring,Missing function or method docstring,C0116
+15,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/15.py,missing-module-docstring,Missing module docstring,C0114
+15,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/15.py,invalid-name,"Module name ""15"" doesn't conform to snake_case naming style",C0103
+15,convention,string_sequence,2,0,2.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/15.py,missing-function-docstring,Missing function or method docstring,C0116
+125,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/125.py,missing-module-docstring,Missing module docstring,C0114
+125,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/125.py,invalid-name,"Module name ""125"" doesn't conform to snake_case naming style",C0103
+125,convention,split_words,1,0,1.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/125.py,missing-function-docstring,Missing function or method docstring,C0116
+125,refactor,split_words,2,4,11.0,20.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/125.py,no-else-return,"Unnecessary ""elif"" after ""return"", remove the leading ""el"" from ""elif""",R1705
+78,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/78.py,missing-module-docstring,Missing module docstring,C0114
+78,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/78.py,invalid-name,"Module name ""78"" doesn't conform to snake_case naming style",C0103
+78,convention,is_prime,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/78.py,missing-function-docstring,Missing function or method docstring,C0116
+78,convention,hex_key,10,0,10.0,11.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/78.py,missing-function-docstring,Missing function or method docstring,C0116
+145,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/145.py,missing-module-docstring,Missing module docstring,C0114
+145,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/145.py,invalid-name,"Module name ""145"" doesn't conform to snake_case naming style",C0103
+145,convention,order_by_points,1,0,1.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/145.py,missing-function-docstring,Missing function or method docstring,C0116
+157,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/157.py,missing-module-docstring,Missing module docstring,C0114
+157,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/157.py,invalid-name,"Module name ""157"" doesn't conform to snake_case naming style",C0103
+157,convention,right_angle_triangle,1,0,1.0,24.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/157.py,missing-function-docstring,Missing function or method docstring,C0116
+157,refactor,right_angle_triangle,2,4,5.0,20.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/157.py,simplifiable-if-statement,The if statement can be replaced with 'return bool(test)',R1703
+157,refactor,right_angle_triangle,2,4,5.0,20.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/157.py,no-else-return,"Unnecessary ""else"" after ""return"", remove the ""else"" and de-indent the code inside it",R1705
+6,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/6.py,missing-module-docstring,Missing module docstring,C0114
+6,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/6.py,invalid-name,"Module name ""6"" doesn't conform to snake_case naming style",C0103
+6,convention,parse_nested_parens,2,0,2.0,23.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/6.py,missing-function-docstring,Missing function or method docstring,C0116
+6,error,parse_nested_parens,2,46,2.0,50.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/6.py,undefined-variable,Undefined variable 'List',E0602
+1,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/1.py,missing-module-docstring,Missing module docstring,C0114
+1,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/1.py,invalid-name,"Module name ""1"" doesn't conform to snake_case naming style",C0103
+1,convention,separate_paren_groups,2,0,2.0,25.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/1.py,missing-function-docstring,Missing function or method docstring,C0116
+1,error,separate_paren_groups,2,48,2.0,52.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/1.py,undefined-variable,Undefined variable 'List',E0602
+46,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/46.py,missing-module-docstring,Missing module docstring,C0114
+46,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/46.py,invalid-name,"Module name ""46"" doesn't conform to snake_case naming style",C0103
+46,convention,fib4,1,0,1.0,8.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/46.py,missing-function-docstring,Missing function or method docstring,C0116
+46,refactor,fib4,2,4,9.0,16.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/46.py,no-else-return,"Unnecessary ""elif"" after ""return"", remove the leading ""el"" from ""elif""",R1705
+46,warning,fib4,13,8,13.0,9.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/46.py,unused-variable,Unused variable 'i',W0612
+162,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/162.py,missing-module-docstring,Missing module docstring,C0114
+162,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/162.py,invalid-name,"Module name ""162"" doesn't conform to snake_case naming style",C0103
+162,convention,string_to_md5,9,4,9.0,18.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/162.py,import-outside-toplevel,Import outside toplevel (hashlib),C0415
+162,refactor,string_to_md5,11,4,14.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/162.py,no-else-return,"Unnecessary ""else"" after ""return"", remove the ""else"" and de-indent the code inside it",R1705
+96,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/96.py,missing-module-docstring,Missing module docstring,C0114
+96,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/96.py,invalid-name,"Module name ""96"" doesn't conform to snake_case naming style",C0103
+96,convention,count_up_to,1,0,1.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/96.py,missing-function-docstring,Missing function or method docstring,C0116
+153,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/153.py,missing-module-docstring,Missing module docstring,C0114
+153,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/153.py,invalid-name,"Module name ""153"" doesn't conform to snake_case naming style",C0103
+153,convention,Strongest_Extension,1,0,1.0,23.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/153.py,missing-function-docstring,Missing function or method docstring,C0116
+153,convention,Strongest_Extension,1,0,1.0,23.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/153.py,invalid-name,"Function name ""Strongest_Extension"" doesn't conform to snake_case naming style",C0103
+122,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/122.py,missing-module-docstring,Missing module docstring,C0114
+122,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/122.py,invalid-name,"Module name ""122"" doesn't conform to snake_case naming style",C0103
+122,convention,add_elements,1,0,1.0,16.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/122.py,missing-function-docstring,Missing function or method docstring,C0116
+122,warning,add_elements,1,17,1.0,20.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/122.py,redefined-outer-name,Redefining name 'arr' from outer scope (line 14),W0621
+122,warning,add_elements,1,22,1.0,23.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/122.py,redefined-outer-name,Redefining name 'k' from outer scope (line 15),W0621
+122,warning,add_elements,2,4,2.0,7.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/122.py,redefined-builtin,Redefining built-in 'sum',W0622
+30,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/30.py,missing-module-docstring,Missing module docstring,C0114
+30,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/30.py,invalid-name,"Module name ""30"" doesn't conform to snake_case naming style",C0103
+30,convention,get_positive,1,0,1.0,16.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/30.py,missing-function-docstring,Missing function or method docstring,C0116
+95,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/95.py,missing-module-docstring,Missing module docstring,C0114
+95,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/95.py,invalid-name,"Module name ""95"" doesn't conform to snake_case naming style",C0103
+95,convention,check_dict_case,1,0,1.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/95.py,missing-function-docstring,Missing function or method docstring,C0116
+95,warning,check_dict_case,1,20,1.0,24.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/95.py,redefined-builtin,Redefining built-in 'dict',W0622
+95,refactor,check_dict_case,8,4,11.0,20.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/95.py,simplifiable-if-statement,The if statement can be replaced with 'return bool(test)',R1703
+95,refactor,check_dict_case,8,4,11.0,20.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/95.py,no-else-return,"Unnecessary ""else"" after ""return"", remove the ""else"" and de-indent the code inside it",R1705
+95,warning,,17,22,17.0,63.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/95.py,duplicate-key,Duplicate key 'a' in dictionary,W0109
+83,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/83.py,missing-module-docstring,Missing module docstring,C0114
+83,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/83.py,invalid-name,"Module name ""83"" doesn't conform to snake_case naming style",C0103
+83,convention,starts_one_ends,1,0,1.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/83.py,missing-function-docstring,Missing function or method docstring,C0116
+83,warning,starts_one_ends,1,20,1.0,21.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/83.py,redefined-outer-name,Redefining name 'n' from outer scope (line 10),W0621
+83,convention,,10,0,10.0,1.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/83.py,invalid-name,"Constant name ""n"" doesn't conform to UPPER_CASE naming style",C0103
+80,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/80.py,missing-module-docstring,Missing module docstring,C0114
+80,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/80.py,invalid-name,"Module name ""80"" doesn't conform to snake_case naming style",C0103
+80,convention,is_happy,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/80.py,missing-function-docstring,Missing function or method docstring,C0116
+76,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/76.py,missing-module-docstring,Missing module docstring,C0114
+76,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/76.py,invalid-name,"Module name ""76"" doesn't conform to snake_case naming style",C0103
+76,convention,is_simple_power,1,0,1.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/76.py,missing-function-docstring,Missing function or method docstring,C0116
+76,refactor,is_simple_power,2,4,5.0,20.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/76.py,simplifiable-if-statement,The if statement can be replaced with 'return bool(test)',R1703
+76,refactor,is_simple_power,2,4,5.0,20.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/76.py,no-else-return,"Unnecessary ""else"" after ""return"", remove the ""else"" and de-indent the code inside it",R1705
+39,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/39.py,missing-module-docstring,Missing module docstring,C0114
+39,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/39.py,invalid-name,"Module name ""39"" doesn't conform to snake_case naming style",C0103
+39,convention,is_prime,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/39.py,missing-function-docstring,Missing function or method docstring,C0116
+39,convention,prime_fib,10,0,10.0,13.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/39.py,missing-function-docstring,Missing function or method docstring,C0116
+39,refactor,prime_fib,11,4,14.0,16.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/39.py,no-else-return,"Unnecessary ""elif"" after ""return"", remove the leading ""el"" from ""elif""",R1705
+129,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/129.py,missing-module-docstring,Missing module docstring,C0114
+129,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/129.py,invalid-name,"Module name ""129"" doesn't conform to snake_case naming style",C0103
+129,convention,minPath,1,0,1.0,11.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/129.py,missing-function-docstring,Missing function or method docstring,C0116
+129,convention,minPath,1,0,1.0,11.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/129.py,invalid-name,"Function name ""minPath"" doesn't conform to snake_case naming style",C0103
+129,convention,,35,0,35.0,2.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/129.py,invalid-name,"Constant name ""k1"" doesn't conform to UPPER_CASE naming style",C0103
+129,convention,,39,0,39.0,2.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/129.py,invalid-name,"Constant name ""k2"" doesn't conform to UPPER_CASE naming style",C0103
+154,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/154.py,missing-module-docstring,Missing module docstring,C0114
+154,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/154.py,invalid-name,"Module name ""154"" doesn't conform to snake_case naming style",C0103
+154,convention,cycpattern_check,1,0,1.0,20.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/154.py,missing-function-docstring,Missing function or method docstring,C0116
+154,warning,cycpattern_check,2,8,2.0,9.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/154.py,unused-variable,Unused variable 'i',W0612
+21,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/21.py,missing-module-docstring,Missing module docstring,C0114
+21,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/21.py,invalid-name,"Module name ""21"" doesn't conform to snake_case naming style",C0103
+21,convention,rescale_to_unit,4,0,4.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/21.py,missing-function-docstring,Missing function or method docstring,C0116
+2,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/2.py,missing-module-docstring,Missing module docstring,C0114
+2,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/2.py,invalid-name,"Module name ""2"" doesn't conform to snake_case naming style",C0103
+2,convention,truncate_number,2,0,2.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/2.py,missing-function-docstring,Missing function or method docstring,C0116
+118,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/118.py,missing-module-docstring,Missing module docstring,C0114
+118,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/118.py,invalid-name,"Module name ""118"" doesn't conform to snake_case naming style",C0103
+118,convention,get_closest_vowel,1,0,1.0,21.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/118.py,missing-function-docstring,Missing function or method docstring,C0116
+143,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/143.py,missing-module-docstring,Missing module docstring,C0114
+143,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/143.py,invalid-name,"Module name ""143"" doesn't conform to snake_case naming style",C0103
+143,convention,is_prime,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/143.py,missing-function-docstring,Missing function or method docstring,C0116
+143,convention,words_in_sentence,16,0,16.0,21.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/143.py,missing-function-docstring,Missing function or method docstring,C0116
+143,convention,,23,0,23.0,9.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/143.py,invalid-name,"Constant name ""sentence1"" doesn't conform to UPPER_CASE naming style",C0103
+143,convention,,26,0,26.0,9.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/143.py,invalid-name,"Constant name ""sentence2"" doesn't conform to UPPER_CASE naming style",C0103
+106,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/106.py,missing-module-docstring,Missing module docstring,C0114
+106,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/106.py,invalid-name,"Module name ""106"" doesn't conform to snake_case naming style",C0103
+106,convention,f,1,0,1.0,5.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/106.py,missing-function-docstring,Missing function or method docstring,C0116
+75,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/75.py,missing-module-docstring,Missing module docstring,C0114
+75,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/75.py,invalid-name,"Module name ""75"" doesn't conform to snake_case naming style",C0103
+75,convention,is_prime,1,0,1.0,12.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/75.py,missing-function-docstring,Missing function or method docstring,C0116
+75,convention,is_multiply_prime,10,0,10.0,21.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/75.py,missing-function-docstring,Missing function or method docstring,C0116
+74,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/74.py,missing-module-docstring,Missing module docstring,C0114
+74,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/74.py,invalid-name,"Module name ""74"" doesn't conform to snake_case naming style",C0103
+74,convention,total_match,1,0,1.0,15.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/74.py,missing-function-docstring,Missing function or method docstring,C0116
+74,refactor,total_match,5,4,10.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/74.py,no-else-return,"Unnecessary ""elif"" after ""return"", remove the leading ""el"" from ""elif""",R1705
+56,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/56.py,missing-module-docstring,Missing module docstring,C0114
+56,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/56.py,invalid-name,"Module name ""56"" doesn't conform to snake_case naming style",C0103
+56,convention,correct_bracketing,1,0,1.0,22.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/56.py,missing-function-docstring,Missing function or method docstring,C0116
+132,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/132.py,missing-module-docstring,Missing module docstring,C0114
+132,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/132.py,invalid-name,"Module name ""132"" doesn't conform to snake_case naming style",C0103
+132,convention,is_nested,1,0,1.0,13.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/132.py,missing-function-docstring,Missing function or method docstring,C0116
+10,convention,,10,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/10.py,line-too-long,Line too long (106/100),C0301
+10,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/10.py,missing-module-docstring,Missing module docstring,C0114
+10,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/10.py,invalid-name,"Module name ""10"" doesn't conform to snake_case naming style",C0103
+61,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/61.py,missing-module-docstring,Missing module docstring,C0114
+61,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/61.py,invalid-name,"Module name ""61"" doesn't conform to snake_case naming style",C0103
+61,convention,correct_bracketing,2,0,2.0,22.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/61.py,missing-function-docstring,Missing function or method docstring,C0116
+149,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/149.py,missing-module-docstring,Missing module docstring,C0114
+149,convention,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/149.py,invalid-name,"Module name ""149"" doesn't conform to snake_case naming style",C0103
+149,convention,sorted_list_sum,1,0,1.0,19.0,sample_data/GPT_3.5_Simple_Prompts/Dataset/149.py,missing-function-docstring,Missing function or method docstring,C0116
+149,refactor,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/149.py,duplicate-code,"Similar lines in 2 files
+==143:[1:16]
+==150:[1:16]
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+
+def words_in_sentence(sentence):",R0801
+149,refactor,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/149.py,duplicate-code,"Similar lines in 2 files
+==150:[1:8]
+==31:[1:8]
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5",R0801
+149,refactor,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/149.py,duplicate-code,"Similar lines in 2 files
+==39:[1:10]
+==75:[1:10]
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+
+def is_multiply_prime(a):",R0801
+149,refactor,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/149.py,duplicate-code,"Similar lines in 2 files
+==127:[1:10]
+==82:[2:9]
+        if n < 2:
+            return False
+        for i in range(2, int(n ** 0.5) + 1):
+            if n % i == 0:
+                return False
+        return True
+",R0801
+149,refactor,,1,0,,,sample_data/GPT_3.5_Simple_Prompts/Dataset/149.py,duplicate-code,"Similar lines in 2 files
+==46:[1:6]
+==63:[2:7]
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 0
+    elif n == 2:",R0801

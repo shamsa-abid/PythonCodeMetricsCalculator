@@ -1,0 +1,2 @@
+filename,test_name,test_id,issue_severity,issue_confidence,issue_cwe,issue_text,line_number,col_offset,end_col_offset,line_range,more_info
+sample_data/GPT_3.5_Simple_Prompts/Dataset/162.py,hashlib,B324,HIGH,HIGH,https://cwe.mitre.org/data/definitions/327.html,Use of weak MD5 hash for security. Consider usedforsecurity=False,12,15,41,[12],https://bandit.readthedocs.io/en/1.7.10/plugins/b324_hashlib.html
