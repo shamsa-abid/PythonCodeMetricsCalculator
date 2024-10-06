@@ -138,32 +138,32 @@ def writeCodeInFile(basePath, folderName):
 
 """# **Step 5: Test Case Check**"""
 
-def calculatePassPercentage(candidateCode, checkCode, functionName):
+testCaseDataFrame = pd.DataFrame(columns=['File Name', 'Test Case Passed', 'Error Type'])
+def validateTestCase(fileName, candidateCode, checkCode, functionName):
+    global testCaseDataFrame
+    index = len(testCaseDataFrame) + 1
+    testCasePassed = True
+    errorType = None
+    dataRow = []
+    dataRow.append(fileName)
     # Execute the candidate code
-    exec(candidateCode)
-    # print(candidateCode)
-
-    # Extract all assert statements from the checkCode
-    testCases = re.findall(r'assert\s+.+', checkCode)
-
-    # Total number of test cases
-    totalTests = len(testCases)
-    passedTests = 0
-
-    # Execute each test case dynamically inside a try-except block
-    for testCase in testCases:
-        testCase = testCase.replace('candidate', functionName)
-        # print(testCase)
-        try:
-            exec(testCase)
-            passedTests += 1
-        except AssertionError:
-            pass
-
-    # Calculate the percentage of passed test cases
-    percentagePassed = (passedTests / totalTests) * 100
-    return percentagePassed
-
+    # exec(candidateCode)
+    # exec(checkCode)
+    functionCall = "check(" + functionName + ")"
+    completeCode = candidateCode + "\n \n" + checkCode + "\n \n" + functionCall
+    completeCode = autopep8.fix_code(completeCode)
+    try:
+      exec(completeCode)
+    except Exception as e:
+      testCasePassed = False
+      errorType = e
+      print(fileName)
+      print(completeCode)
+    testCaseDataFrame.loc[index] = {
+        'File Name': fileName,
+        'Test Case Passed': testCasePassed,
+        'Error Type': errorType
+    }
 
 def verifyTestCase():
   completePath = os.path.join(basePath, folderName)
@@ -182,19 +182,10 @@ def verifyTestCase():
 
   testCaseVerificationArray = []
   for key in code:
-    if key != '32' and key != '44'and key != '87' and key != '55' and key != '1' and key != '53'and key != '63'and key != '50' and key != '113' and key != '38' and key != '151':
-      print(key)
-      # Extract and clean function definition
-      functionDefinition = removeComments(df.loc[key, 'prompt']).strip()
-      functionDefinition = removeLeadingSpaces(functionDefinition, 2)
-      functionDefinition = removeLinesContaining('FIX = ', functionDefinition)  # Remove lines containing 'FIX='
-      functionName = re.search(r"def\s+(\w+)\s*\(", functionDefinition).group(1)
-      percentagePassed = calculatePassPercentage(code[key],df.loc[key]['test'],functionName)
-      print(percentagePassed)
-      testCaseVerificationArray.append(percentagePassed)
-  print(testCaseVerificationArray)
-
-# verifyTestCase()
+    # Extract and clean function definition
+    functionName = df.loc[key,'entry_point']
+    validateTestCase(key,code[key],df.loc[key]['test'],functionName)
+  testCaseDataFrame.to_csv(os.path.join(basePath, 'CSV_Reports/gpt_4_improved_prompt_test_case_check.csv'), index = False)
 
 """# **Step 5: Running Bandit**"""
 
@@ -378,6 +369,7 @@ runRadon(folderName)
 runComplexipy(folderName)
 runPylint(folderName)
 runBandit(folderName)
+verifyTestCase()
 
 """# **Step 10: Download Folder to ZIP (Optional)**"""
 

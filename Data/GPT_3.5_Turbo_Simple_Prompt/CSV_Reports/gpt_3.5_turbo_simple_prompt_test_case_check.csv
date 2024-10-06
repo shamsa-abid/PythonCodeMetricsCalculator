@@ -1,0 +1,165 @@
+File Name,Test Case Passed,Error Type
+0,TRUE,
+123,TRUE,
+150,TRUE,
+16,TRUE,
+92,TRUE,
+126,FALSE,Assertion Error
+124,TRUE,
+19,TRUE,
+141,TRUE,
+84,FALSE,Assertion Error
+127,FALSE,Assertion Error
+157,TRUE,
+131,FALSE,Assertion Error
+23,TRUE,
+103,TRUE,
+99,TRUE,
+72,TRUE,
+73,TRUE,
+162,TRUE,
+80,TRUE,
+93,TRUE,
+105,TRUE,
+53,TRUE,
+70,TRUE,
+109,TRUE,
+95,FALSE,'int' object has no attribute 'islower'
+125,FALSE,Assertion Error
+153,TRUE,
+10,TRUE,
+42,TRUE,
+58,TRUE,
+57,TRUE,
+27,TRUE,
+89,TRUE,
+106,TRUE,
+7,TRUE,
+52,TRUE,
+51,TRUE,
+118,FALSE,Assertion Error
+88,FALSE,list index out of range
+158,TRUE,
+110,FALSE,Assertion Error
+97,TRUE,
+33,TRUE,
+15,TRUE,
+38,TRUE,
+14,TRUE,
+78,TRUE,
+46,TRUE,
+43,TRUE,
+61,TRUE,
+113,FALSE,Assertion Error
+107,TRUE,
+116,TRUE,
+82,TRUE,
+159,FALSE,Assertion Error
+68,TRUE,
+13,TRUE,
+40,TRUE,
+3,TRUE,
+45,TRUE,
+34,TRUE,
+145,FALSE,Assertion Error
+71,TRUE,
+160,FALSE,Assertion Error
+120,FALSE,Assertion Error
+140,FALSE,Assertion Error
+86,TRUE,
+108,FALSE,Assertion Error
+98,TRUE,
+63,TRUE,
+96,TRUE,
+139,TRUE,
+121,FALSE,Assertion Error
+128,FALSE,
+50,TRUE,
+35,TRUE,
+32,FALSE,name 'poly' is not defined
+26,TRUE,
+60,TRUE,
+37,TRUE,
+67,FALSE,Assertion Error
+12,FALSE,name 'List' is not defined
+6,FALSE,name 'List' is not defined
+87,TRUE,
+102,TRUE,
+147,TRUE,
+11,TRUE,
+56,TRUE,
+119,FALSE,Assertion Error
+79,TRUE,
+152,TRUE,
+48,TRUE,
+100,FALSE,Assertion Error
+5,FALSE,pop from empty list
+112,TRUE,
+54,FALSE,Assertion Error
+136,TRUE,Assertion Error
+122,FALSE,Assertion Error
+142,FALSE,Assertion Error
+74,FALSE,Assertion Error
+1,FALSE,name 'List' is not defined
+90,TRUE,
+66,TRUE,
+91,TRUE,
+75,FALSE,Assertion Error
+138,FALSE,Assertion Error
+69,FALSE,Assertion Error
+83,TRUE,
+155,TRUE,
+59,TRUE,
+55,TRUE,
+29,TRUE,
+149,TRUE,
+36,FALSE,Assertion Error
+62,TRUE,
+104,TRUE,
+146,TRUE,
+25,FALSE,name 'List' is not defined
+21,TRUE,
+156,TRUE,
+114,TRUE,
+94,TRUE,
+163,FALSE,Assertion Error
+22,TRUE,
+117,TRUE,
+41,FALSE,Assertion Error
+20,TRUE,
+151,FALSE,Assertion Error
+154,TRUE,
+144,TRUE,
+76,FALSE,Assertion Error
+115,TRUE,
+28,TRUE,
+44,TRUE,
+17,TRUE,
+24,FALSE,Assertion Error
+39,FALSE,Assertion Error
+161,TRUE,
+9,FALSE,name 'List' is not defined
+2,TRUE,
+143,TRUE,
+148,TRUE,
+129,TRUE,
+64,TRUE,
+49,TRUE,
+81,FALSE,Assertion Error
+4,TRUE,
+85,TRUE,
+30,TRUE,
+31,TRUE,
+77,TRUE,
+133,TRUE,
+137,FALSE,'>' not supported between instances of 'str' and 'float'
+101,TRUE,
+135,FALSE,Assertion Error
+132,FALSE,Assertion Error
+111,TRUE,
+18,TRUE,
+47,TRUE,
+134,TRUE,
+130,FALSE,Assertion Error
+65,TRUE,
+8,TRUE,
