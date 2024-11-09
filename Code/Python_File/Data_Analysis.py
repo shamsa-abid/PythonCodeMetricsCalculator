@@ -76,8 +76,10 @@ labels = [
     'GPT 4 I',
     'GPT 4 E'
 ]
-# #Box Plots
-# # List to store the volume data for each CSV
+#################### Box Plots ####################
+#################### Tools: Radon, Complexipy ####################
+
+# List to store the volume data for each CSV
 # data = []
 # j = 0
 # title = "LOC"
@@ -99,9 +101,10 @@ labels = [
 # plt.grid(axis='y')  # Optional: add horizontal grid lines for better readability
 # plt.tight_layout()
 # plt.show()
+#################### Box Plots Ends ####################
 
-
-# Bar Charts
+#################### Bar Charts ####################
+#################### Tools: Pylint and For Test case ####################
 # frequencyObject = {}
 
 # Pylint
@@ -126,6 +129,7 @@ labels = [
 #     countFrequency(labels[j], df)
 #     j += 1
 #
+
 #test case
 # types = ['passed','runtime error','assertion error']
 # csv_files = getCsvFile(4)
@@ -210,6 +214,10 @@ labels = [
 # Call the function with your frequencyObject
 # plot_frequency(frequencyObject)
 
+#################### Bar Charts End ####################
+
+#################### Single Bar Chart ####################
+#################### Tools: Bandit ####################
 # For Bandit
 # csv_files = getCsvFile(5)
 # def getBanditFrequency(label,df):
@@ -233,7 +241,9 @@ labels = [
 #
 # plt.ylabel("Frequency")
 # plt.show()
+#################### Single Bar Chart Ends ####################
 
+#################### Comparison Analysis with Human Eval ####################
 
 humanEvalRadon = pd.read_csv(os.path.join(basePath, "Human_Eval_Dataset", 'CSV_Reports', 'human_eval_radon.csv'))
 humanEvalComplexipy = pd.read_csv(os.path.join(basePath, "Human_Eval_Dataset", 'CSV_Reports', 'human_eval_complexipy.csv'))
@@ -283,3 +293,5 @@ print("CC ",(CC/164) * 100)
 print("Vocab", (vocab/164) * 100)
 print("MI ", (MI/164) * 100)
 print("CogC ", (cogC/164) * 100)
+
+#################### Comparison Analysis with Huaman Eval Ends ####################
