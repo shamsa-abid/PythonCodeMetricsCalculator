@@ -268,13 +268,13 @@ for i in range (len(targetTestCaseCheck)):
         testCase += 1
         index = str(i) + '.py'
 
-        if(targetRadon.loc[index]['LOC'] < humanEvalRadon.loc[index]['LOC']):
+        if not (targetRadon.loc[index]['LOC'] < humanEvalRadon.loc[index]['LOC']):
             loc += 1
-        if (targetRadon.loc[index]['Cyclomatic Complexity'] < humanEvalRadon.loc[index]['Cyclomatic Complexity']):
+        if not (targetRadon.loc[index]['Cyclomatic Complexity'] < humanEvalRadon.loc[index]['Cyclomatic Complexity']):
             CC += 1
-        if (targetRadon.loc[index]['Vocabulary'] < humanEvalRadon.loc[index]['Vocabulary']):
+        if not (targetRadon.loc[index]['Vocabulary'] < humanEvalRadon.loc[index]['Vocabulary']):
             vocab += 1
-        if (targetRadon.loc[index]['Maintainability Index'] > humanEvalRadon.loc[index]['Maintainability Index']):
+        if not (targetRadon.loc[index]['Maintainability Index'] > humanEvalRadon.loc[index]['Maintainability Index']):
             MI += 1
         temp = humanEvalComplexipy.loc[index]['Complexity']
         if isinstance(temp, pd.Series) and len(temp) > 1:
@@ -284,7 +284,7 @@ for i in range (len(targetTestCaseCheck)):
 
         if isinstance(target_complexity, pd.Series) and len(target_complexity) > 1:
             target_complexity = target_complexity.sum()
-        if target_complexity < temp:
+        if not target_complexity < temp:
             cogC += 1
 
 print("Test Case " ,testCase)
