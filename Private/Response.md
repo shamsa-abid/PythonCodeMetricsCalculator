@@ -245,31 +245,31 @@ We agree that incorporating more extensive benchmarks like HumanEval+, MBPP, or 
 
 We appreciate the feedback on improving the motivating example. We propose using the implementation of a remove_duplicates function, which is a commonly encountered task in programming. Consider the following human-written code from 26.py:
 
-`
+```
 from typing import List
 import collections
 
 def remove_duplicates(numbers: List[int]) -> List[int]:
     c = collections.Counter(numbers)
     return [n for n in numbers if c[n] <= 1]
-`
+```
 
 This code uses the collections.Counter library to identify and remove duplicate elements in a list. When we ask GPT models to improve this code, their responses highlight different coding styles and approaches. Consider the response from GPT-3.5-Turbo:
 
-`
+```
 from typing import List
 from collections import Counter
 
 def remove_duplicates(numbers: List[int]) -> List[int]:
     counter = Counter(numbers)
     return [n for n in numbers if counter[n] == 1]
-`
+```
 GPT-3.5 Turbo slightly improves over the human-written code by directly leveraging the Counter class while maintaining its simplicity. It further applies variable renaming resulting in the counter variable enhancing readability. This minor enhancement shows the model's ability to refine existing implementations effectively.
 The difference between c[n] <= 1 in the human code and counter[n] == 1 in the model-generated code reflects different approaches to defining what counts as a "duplicate" element. The model's condition ensures that only elements occurring exactly 1 time are included in the result. It is stricter, as it excludes any elements occurring more than once or not at all.
 
 Consider GPT-4's output:
 
-`
+```
 from typing import List
 
 def remove_duplicates(numbers: List[int]) -> List[int]:
@@ -280,7 +280,7 @@ def remove_duplicates(numbers: List[int]) -> List[int]:
             result.append(num)
             seen.add(num)
     return result
-`
+```
 
 GPT-4, on the other hand, rewrites the implementation entirely, introducing a more verbose approach using a set and count() function. While this solution may appear more robust, it introduces inefficiency (due to repeated calls to numbers.count()) and deviates from the simplicity of the original code. From this example, we note that model-generated code either makes incremental improvements (as in GPT-3.5 Turbo) or diverges to less optimal, verbose solutions (as in GPT-4). 
 
