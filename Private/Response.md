@@ -16,9 +16,9 @@ Regarding providing statistical significance results for Figures 6-9, we now per
 | LOC | 308.88 | 1.02e-63 | 
 | CC | 19.43 | 0.0035 | 
 | MI | 170.60 | 3.36e-34 | 
-| CogC | 99.44 | 3.28e-19 |
+| CogC | 108.95 | 3.36e-21 |
 
-The results from the Friedman’s test show that the metrics (LOC, CC, MI, and CogC) exhibit statistically significant differences (p-values < 0.05 for all metrics). Specifically, LOC has an extremely small p-value (1.02e-63), indicating a very significant difference in the distributions across the models. CC also has a significant p-value (0.0035), but less extreme than LOC, suggesting a notable difference in complexity. MI and CogC show highly significant differences with p-values of 3.36e-34 and 3.28e-19, respectively, confirming that these metrics also differ significantly across the models.
+The results from the Friedman’s test show that the metrics (LOC, CC, MI, and CogC) exhibit statistically significant differences (p-values < 0.05 for all metrics). Specifically, LOC has an extremely small p-value (1.02e-63), indicating a very significant difference in the distributions across the models. CC also has a significant p-value (0.0035), but less extreme than LOC, suggesting a notable difference in complexity. MI and CogC show highly significant differences with p-values of 3.36e-34 and 3.36e-21, respectively, confirming that these metrics also differ significantly across the models.
 
 We then used the Wilcoxon test for comparing LOC between HumanEval and various GPT models. It is a non-parametric test that does not assume normality in the data, which is suitable for comparing paired samples like in our study where we are comparing LOC between HumanEval and various GPT models. Since we are testing whether one distribution (e.g., HumanEval_LOC) is significantly different from another (e.g., GPT-3.5S_LOC, GPT-4S), the Wilcoxon signed-rank test allows us to assess whether these differences are statistically significant. 
 
@@ -55,15 +55,18 @@ GPT-3.5E, GPT-4I, and GPT-4E all show significant differences (p-values < 0.05),
 
 GPT-3.5S shows a strong difference with a very low p-value (1.88e-22), indicating that its maintainability is significantly different from HumanEval. The GPT-3.5I model is almost indistinguishable from HumanEval with a p-value of 0.0529, which is close to the threshold for significance. However, all other models (GPT-3.5E, GPT-4S, GPT-4I, and GPT-4E) show highly significant differences with p-values well below 0.05, indicating that these models generate code with significantly different maintainability than HumanEval.
 
-| CogC Comparison | Test Statistic | p-value | 
-|--------------------------------------------------|----------------|--------------------------------|
-|HumanEval_Complexity vs GPT3.5S | 2387.0 | 0.7576440001614906 | 
-|HumanEval_Complexity vs GPT3.5I | 2225.5 | 0.4754973976804916 |                                                   |HumanEval_Complexity vs GPT3.5E | 761.0 | 3.093187015486396e-07 | 
-|HumanEval_Complexity vs GPT4S | 1602.0 | 0.016611742877961713 | 
-|HumanEval_Complexity vs GPT4I | 944.0 | 2.7772156242416405e-06 | 
-|HumanEval_Complexity vs GPT4E | 975.0 | 1.3470173722438046e-09 |
+| CogC Comparison                              | Test Statistic | p-value            |
+|-----------------------------------------|----------------|--------------------|
+| HumanEval_CogC vs GPT3.5S         | 2247.0         | 0.3367755904310903 |
+| HumanEval_CogC vs GPT3.5I         | 2255.5         | 0.5438883799048799 |
+| HumanEval_CogC vs GPT3.5E         | 651.0          | 7.051189198915836e-08 |
+| HumanEval_CogC vs GPT4S           | 1675.5         | 0.016327949435260492 |
+| HumanEval_CogC vs GPT4I           | 1028.5         | 7.954093372341784e-06 |
+| HumanEval_CogC vs GPT4E           | 961.0          | 1.0125017061754096e-09 |
 
-Both GPT-3.5S and GPT-3.5I show no significant differences in complexity from HumanEval, with p-values of 0.7576 and 0.4755, respectively, indicating that their complexity is similar to HumanEval. However, the other models show highly significant differences. GPT-3.5E, with a p-value of 3.09e-07, indicates a significant difference, while GPT-4S (p-value 0.0166), GPT-4I (p-value 2.78e-06), and GPT-4E (p-value 1.35e-09) all exhibit notable differences in complexity compared to HumanEval.
+
+
+The Wilcoxon test results show significant differences in cognitive complexity scores between HumanEval and several GPT models. No significant differences were observed for GPT3.5S (p = 0.34) or GPT3.5I (p = 0.54), indicating similar complexity scores to HumanEval. However, GPT3.5E (p = 7.05e-08), GPT4S (p = 0.016), GPT4I (p = 7.95e-06), and GPT4E (p = 1.01e-09) show statistically significant differences. These results suggest that GPT3.5E and all GPT4 variants generate code with cognitive complexity scores substantially different from HumanEval, with the largest differences observed in GPT3.5E and GPT4E.
 
 ## Calculation of TOPSIS
 
@@ -104,15 +107,7 @@ Our results indicating that GPT-generated code can be less prone to security ris
 
 ### TOPSIS Normalization
 
-The normalized value \( r_{ij} \) for an element \( x_{ij} \) in Table VI is calculated as:
-
-\[
-r_{ij} = \frac{x_{ij}}{\sqrt{\sum_{i=1}^{m} x_{ij}^2}}
-\]
-
-where:
-- \( x_{ij} \): The value of the \( i \)-th alternative for the \( j \)-th criterion.
-- \( m \): The total number of alternatives. Each criterion's values are normalized to ensure comparability on a unit scale.
+For each quality metric, we first square all the values across the codebases, sum these squared values, and then take the square root of the sum to get a normalization factor. Each value is then divided by this normalization factor, resulting in a normalized decision matrix with values between 0 and 1. 
 
 ### Notion of Quality
 For the reviewer's concern regarding our statement "*Our results indicate that LLMs specifically GPT-3.5-Turbo and GPT-4 are capable of producing better quality code than humans.": It's a bit more complicated than that. Does your notion of "quality" include correctness?*" We can rephrase as follows: GPT-3.5-Turbo and GPT-4 demonstrate the ability to generate higher-quality code, though this ability is not consistent; for example, Maintainability Index (MI) improves in only 54% of functionally correct model-generated solutions.
@@ -121,7 +116,7 @@ For the reviewer's concern regarding our statement "*Our results indicate that L
 
 ### Rephrasing and Addition of RQs
 
-We wholeheartedly accept the rephrased versions of the RQs. We can definitely revise our current RQs and include the two other additional RQs as suggested.
+Thank you for your valuable suggestions regarding the research questions. We appreciate the rephrased versions and agree with your proposed changes. We will revise our current research questions accordingly and are happy to include the two additional RQs as you suggested to enhance the scope and clarity of our work.
 
 ### Tool Selection Justification
 
@@ -181,7 +176,7 @@ We first address the concern regarding the conclusions being unsurprising. Indee
 
 It is important to note that correctness alone does not guarantee trustworthiness. Trustworthy code must also be reliable, secure, and aligned with best practices, which are not captured by correctness metrics. While our current work does not yet introduce explicit trustworthiness metrics, it lays the foundation for incorporating such measures in the future. By evaluating models across a spectrum of quality attributes, our work is a step toward developing frameworks for trustworthy code evaluation. This broader perspective highlights the importance of our contribution in advancing the discourse on trustworthiness in code generation.
 
-### Enhanced Prompt Reliance of Human-written Solutions
+### Enhanced Prompt Reliance on Human-written Solutions
 
 We acknowledge that the dependency of the Enhanced Prompt approach on human-written solutions may raise questions about the validity of the evaluation outcomes when applied to autonomous code generation scenarios. However, the Enhanced Prompt approach was not intended as a standalone solution but rather as a method to explore how incorporating baseline examples influences model outputs. Our results demonstrate the capability of GPT models to produce better quality code against given baseline code. For code improvement workflows, where developers interact with models to iteratively refine code, the Enhanced Prompt approach may be useful.
 
@@ -198,17 +193,20 @@ To avoid this bias and ensure transparency, we chose to present two separate ran
 ### Model Configurations
 
 Following are the technical details of the models used:
+
 GPT 3.5 - Turbo
 - Context Window: 16,385 tokens  
 - Max Output Token: 4,096 tokens  
 - Training Data: Up to Sep 2021  
-- Hyper-parameter Setting: Default  Temperature: 1.0
+- Hyper-parameter Setting: Default  
+- Temperature: 1.0
 
 GPT 4
 - Context Window: 8,192 tokens  
 - Max Output Token: 8,192 tokens  
 - Training Data: Up to Sep 2021  
-- Hyper-parameter Setting: Default  Temperature: 1.0
+- Hyper-parameter Setting: Default  
+- Temperature: 1.0
 
 ### Prompt Engineering
 
@@ -231,10 +229,59 @@ We appreciate the reviewer’s question regarding the implications of our empiri
 Our findings emphasize the role of prompt design. Structuring prompts with clear instructions or examples of code can help LLMs generate higher-quality code. 
 
 2. Train Models with Critical and Human-centric Quality Metrics:
-Our results demonstrate that GPT models generate code that often surpasses human-written code in specific quality metrics. This highlights the potential for further improvement if critical and human-centric quality metrics are explicitly incorporated into the training process. By aligning the training objectives of LLMs with these metrics—reflected in our dataset and analysis—models could be better guided to generate code that balances correctness with other important quality factors.
+Our results demonstrate that GPT models generate code that often surpasses human-written code in specific quality metrics. This highlights the potential for further improvement if critical and human-centric quality metrics are explicitly incorporated into the training process. By aligning the training objectives of LLMs with these metrics - reflected in our dataset and analysis - models could be better guided to generate code that balances correctness with other important quality factors.
 
 3. Expand Evaluation Benchmarks for Comprehensive Code Quality Assessment:
 Our study highlights the limitations of current evaluation benchmarks, such as HumanEval, which primarily focus on correctness. Our results show that LLM-generated code often performs better than human-written code in human-centric metrics like readability and maintainability, while sometimes falling short in critical factors like security. Our findings suggest that existing benchmarks should evolve to include a wider range of human-centric and critical quality metrics. Such expanded benchmarks would enable more comprehensive assessments of generated code, guiding both model evaluation and improvements in generating code that is not only correct but also aligned with developer needs and critical quality standards.
 
 **Suggestion for Mining and Knowledge Extraction**
 By providing a dataset of code quality metrics for human-written and AI-generated code, our work contributes to advancing the evaluation of code generation models beyond correctness, offering a comprehensive perspective on code quality. This dataset can serve as a valuable resource for the MSR community, enabling future research that explores how AI-generated code influences the overall quality of software repositories. Researchers can leverage these metrics to study patterns in AI-generated code, identify potential risks, and optimize code generation practices for integration into large-scale projects, ultimately improving the overall quality of software development.
+
+### Including more benchmarks
+
+We agree that incorporating more extensive benchmarks like HumanEval+, MBPP, or BigCodeBench could significantly enhance the reliability and generalizability of our results. While our current study focuses on HumanEval, we recognize the value of these additional benchmarks and plan to include them in future work to provide a more comprehensive evaluation.
+
+### Motivating Example
+
+We appreciate the feedback on improving the motivating example. We propose using the implementation of a remove_duplicates function, which is a commonly encountered task in programming. Consider the following human-written code from 26.py:
+
+`
+from typing import List
+import collections
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    c = collections.Counter(numbers)
+    return [n for n in numbers if c[n] <= 1]
+`
+
+This code uses the collections.Counter library to identify and remove duplicate elements in a list. When we ask GPT models to improve this code, their responses highlight different coding styles and approaches. Consider the response from GPT-3.5-Turbo:
+
+`
+from typing import List
+from collections import Counter
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    counter = Counter(numbers)
+    return [n for n in numbers if counter[n] == 1]
+`
+GPT-3.5 Turbo slightly improves over the human-written code by directly leveraging the Counter class while maintaining its simplicity. It further applies variable renaming resulting in the counter variable enhancing readability. This minor enhancement shows the model's ability to refine existing implementations effectively.
+The difference between c[n] <= 1 in the human code and counter[n] == 1 in the model-generated code reflects different approaches to defining what counts as a "duplicate" element. The model's condition ensures that only elements occurring exactly 1 time are included in the result. It is stricter, as it excludes any elements occurring more than once or not at all.
+
+Consider GPT-4's output:
+
+`
+from typing import List
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    seen = set()
+    result = []
+    for num in numbers:
+        if num not in seen and numbers.count(num) == 1:
+            result.append(num)
+            seen.add(num)
+    return result
+`
+
+GPT-4, on the other hand, rewrites the implementation entirely, introducing a more verbose approach using a set and count() function. While this solution may appear more robust, it introduces inefficiency (due to repeated calls to numbers.count()) and deviates from the simplicity of the original code. From this example, we note that model-generated code either makes incremental improvements (as in GPT-3.5 Turbo) or diverges to less optimal, verbose solutions (as in GPT-4). 
+
+There are scenarios where models generate code that is both correct and of higher quality compared to human-written code, as well as instances where human-written code outperforms model-generated code. The primary aim of our work is to quantify such instances where model-generated code demonstrates improvements over human-written code, providing insights into the areas where models excel and highlighting opportunities for further refinement.
